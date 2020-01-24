@@ -6,14 +6,8 @@ namespace Gw2_WikiParser
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            new WikiParser();
         }
-
-        public Program()
-        {
-
-        }
-
 
     }
 }
