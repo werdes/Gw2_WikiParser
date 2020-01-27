@@ -30,7 +30,6 @@ namespace Gw2_WikiParser.Utility
 
         }
 
-        public void 
     }
 
 }

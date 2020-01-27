@@ -107,6 +107,11 @@ namespace Gw2_WikiParser.Tasks
             return bulkItems;
         }
 
+        /// <summary>
+        /// Writes the output files (separated by ;, from AppConfig key bulk_output_files)
+        /// </summary>
+        /// <param name="items"></param>
+        /// <returns></returns>
         private bool WriteOuput(List<BulkItem> items)
         {
             bool wasSuccessful = true;
@@ -126,6 +131,15 @@ namespace Gw2_WikiParser.Tasks
             }
 
             return wasSuccessful;
+        }
+
+        /// <summary>
+        /// Returns the Categories for displaying
+        /// </summary>
+        /// <returns></returns>
+        public string GetProperties()
+        {
+            return _categories.Join(", ");
         }
     }
 }

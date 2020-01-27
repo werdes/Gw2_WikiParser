@@ -8,5 +8,6 @@ namespace Gw2_WikiParser.Interfaces
     interface IWikiTask
     {
         Task<bool> Run();
+        string GetProperties();
     }
 }

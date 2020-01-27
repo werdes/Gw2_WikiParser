@@ -19,9 +19,9 @@ namespace Gw2_WikiParser.Extensions
             }
         }
 
-        public static string Join(this IEnumerable<string> oSource, string cSeparator)
+        public static string Join(this IEnumerable<string> lst, string separator)
         {
-            return string.Join(cSeparator, oSource);
+            return string.Join(separator, lst);
         }
 
         public static void AddIfNotNull<T>(this List<T> lst, T obj)
@@ -101,6 +101,14 @@ namespace Gw2_WikiParser.Extensions
             {
                 if(!dict.ContainsKey(kvp.Key))
                     dict.Add(kvp.Key, kvp.Value);
+            }
+        }
+
+        public static void ForEach<K, V>(this Dictionary<K, V> dict, Action<K, V> action)
+        {
+            foreach(K key in dict.Keys)
+            {
+                action(key, dict[key]);
             }
         }
     }

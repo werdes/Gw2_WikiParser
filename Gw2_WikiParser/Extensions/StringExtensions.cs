@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace Gw2_WikiParser.Extensions
 {
@@ -30,6 +31,12 @@ namespace Gw2_WikiParser.Extensions
         public static string Format(this string s, params object[] parameters)
         {
             return string.Format(s, parameters);
+        }
+
+        public static string RegexReplace(this string s, string oldValue, string newValue, RegexOptions options)
+        {
+            return Regex.Replace(s, Regex.Escape(oldValue), newValue.Replace("$", "$$"), options);
+            
         }
     }
 }

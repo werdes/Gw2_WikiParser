@@ -22,10 +22,7 @@ namespace Gw2_WikiParser.Utility
         private static Lazy<ApiWrapper> _instance = new Lazy<ApiWrapper>(() => new ApiWrapper());
         public static ApiWrapper Instance
         {
-            get
-            {
-                return _instance.Value;
-            }
+            get => _instance.Value;
         }
 
         private ApiWrapper()
