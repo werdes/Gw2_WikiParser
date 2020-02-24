@@ -30,6 +30,10 @@ namespace Gw2_WikiParser.Utility
             _client = new Gw2Sharp.Gw2Client(new Gw2Sharp.Connection());
         }
 
+        /// <summary>
+        /// Returns a Dictionary with all items
+        /// </summary>
+        /// <returns></returns>
         public Dictionary<string, int> GetItemIdLookup()
         {
             Dictionary<string, int> lookup = new Dictionary<string, int>();
@@ -52,6 +56,12 @@ namespace Gw2_WikiParser.Utility
                 _ratelimitHandler.Set();
             }
             return lookup;
+        }
+
+        public int GetBuildId()
+        {
+            IBuildClient buildClient = _client.WebApi.V2.Build;
+            return buildClient.GetAsync().Result.Id;
         }
     }
 }

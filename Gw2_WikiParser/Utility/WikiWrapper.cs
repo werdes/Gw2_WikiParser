@@ -1,4 +1,5 @@
-﻿using Gw2_WikiParser.Utility;
+﻿using Gw2_WikiParser.Extensions;
+using Gw2_WikiParser.Utility;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -24,6 +25,7 @@ namespace Gw2_WikiParser.Utility
         private readonly log4net.ILog _log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         private RatelimitHandler _ratelimitHandler = new RatelimitHandler(100, nameof(WikiWrapper));
         private RdfXmlParser _rdfParser = new RdfXmlParser(RdfXmlParserMode.DOM);
+        private CacheHandler<(string, string, RdfGraphContainer, WikiPage)> _cache = new Utility.CacheHandler<(string, string, RdfGraphContainer, WikiPage)>(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.Name);
 
         private WikiClient _client;
         private WikiSite _site;
@@ -45,6 +47,8 @@ namespace Gw2_WikiParser.Utility
             _site = new WikiSite(_client, wikiUrl);
             _site.Initialization.Wait();
 
+            _cache.Import(ConfigurationManager.AppSettings["cache"].Format(
+                ApiWrapper.Instance.GetBuildId()));
         }
 
         /// <summary>
@@ -52,14 +56,25 @@ namespace Gw2_WikiParser.Utility
         /// </summary>
         /// <param name="title"></param>
         /// <returns></returns>
-        public async Task<(string, string)> GetPageContent(string title)
+        public async Task<(string, string)> GetPageContent(string title, bool caching = true)
         {
             _log.Info($"Retrieving page {title}");
             _ratelimitHandler.Wait();
 
+            if (_cache.Contains(title) && caching)
+            {
+                (string pageTitle, string content, RdfGraphContainer rdfGraph, WikiPage wikiPage) = _cache.Get(title);
+                if (!string.IsNullOrEmpty(pageTitle) && !string.IsNullOrEmpty(content))
+                {
+                    return (pageTitle, content);
+                }
+            }
+
             WikiPage page = new WikiPage(_site, title);
             await page.RefreshAsync(PageQueryOptions.FetchContent | PageQueryOptions.ResolveRedirects);
+
             _ratelimitHandler.Set();
+            _cache.Set(page.Title, (page.Title, page.Content, null, null));
 
             return (page.Title, page.Content);
         }
@@ -69,16 +84,28 @@ namespace Gw2_WikiParser.Utility
         /// </summary>
         /// <param name="categoryTitle"></param>
         /// <returns></returns>
-        public async Task<List<(string, string)>> GetCategoryMembersWithContent(string categoryTitle)
+        public async Task<List<(string, string)>> GetCategoryMembersWithContent(string categoryTitle, bool caching = true)
         {
             List<(string, string)> lstMember = new List<(string, string)>();
             List<WikiPage> pages = await GetCategoryMembers(categoryTitle);
 
+
             foreach (WikiPage page in pages)
             {
+                if (_cache.Contains(page.Title) && caching)
+                {
+                    (string title, string content, RdfGraphContainer rdfGraph, WikiPage wikiPage) = _cache.Get(page.Title);
+                    if (!string.IsNullOrEmpty(title) && !string.IsNullOrEmpty(content))
+                    {
+                        lstMember.Add((title, content));
+                        continue;
+                    }
+                }
+
                 _ratelimitHandler.Wait();
                 await page.RefreshAsync(PageQueryOptions.FetchContent | PageQueryOptions.ResolveRedirects);
                 lstMember.Add((page.Title, page.Content));
+                _cache.Set(page.Title, (page.Title, page.Content, null, null));
 
                 _log.Debug($"Retrieving page {page.Title} {pages.IndexOf(page) + 1}/{pages.Count}");
                 _ratelimitHandler.Set();
@@ -93,22 +120,36 @@ namespace Gw2_WikiParser.Utility
         /// </summary>
         /// <param name="categoryTitle"></param>
         /// <returns></returns>
-        public async Task<List<(string, string, Graph)>> GetCategoryMembersWithContentAndRdfGraph(string categoryTitle)
+        public async Task<List<(string, string, RdfGraphContainer)>> GetCategoryMembersWithContentAndRdfGraph(string categoryTitle, bool caching = true)
         {
-            List<(string, string, Graph)> lstMember = new List<(string, string, Graph)>();
+            List<(string, string, RdfGraphContainer)> lstMember = new List<(string, string, RdfGraphContainer)>();
             List<WikiPage> pages = await GetCategoryMembers(categoryTitle);
-            pages = pages.Where(x => x.Title.Contains("Revelry Starcake") || x.Title.Contains("Bowl of Chocolate Chip Ice Cream")).ToList();
+            //pages = pages.Where(x => x.Title.Contains("Revelry Starcake") || x.Title.Contains("Bowl of Chocolate Chip Ice Cream")).ToList();
 
             foreach (WikiPage page in pages)
             {
+                if (_cache.Contains(page.Title) && caching)
+                {
+                    (string title, string content, RdfGraphContainer rdfGraph, WikiPage wikiPage) = _cache.Get(page.Title);
+                    if (!string.IsNullOrEmpty(title) && 
+                        !string.IsNullOrEmpty(content) &&
+                        rdfGraph != null)
+                    {
+                        lstMember.Add((title, content, rdfGraph));
+                        continue;
+                    }
+                }
+
                 _ratelimitHandler.Wait();
                 await page.RefreshAsync(PageQueryOptions.FetchContent | PageQueryOptions.ResolveRedirects);
-                
+
                 _log.Debug($"Retrieving page {page.Title} {pages.IndexOf(page) + 1}/{pages.Count}");
                 _ratelimitHandler.Set();
 
-                Graph graph = await GetRdfGraph(page.Title);
+                RdfGraphContainer graph = GetRdfGraph(page.Title);
                 lstMember.Add((page.Title, page.Content, graph));
+
+                _cache.Set(page.Title, (page.Title, page.Content, graph, null));
             }
 
             return lstMember;
@@ -119,18 +160,13 @@ namespace Gw2_WikiParser.Utility
         /// </summary>
         /// <param name="pageName"></param>
         /// <returns></returns>
-        private async Task<Graph> GetRdfGraph(string pageName)
+        private RdfGraphContainer GetRdfGraph(string pageName)
         {
             _ratelimitHandler.Wait();
             string url = ConfigurationManager.AppSettings["wiki_rdf_url"] + pageName;
-            Graph graph = new Graph();
-            using (TextReader reader = new StringReader(new WebClient().DownloadString(url)))
-            {
-                _rdfParser.Load(graph, reader);
-                _ratelimitHandler.Set();
-            }
+            RdfGraphContainer graphContainer = new RdfGraphContainer(new WebClient().DownloadString(url));
 
-            return graph;
+            return graphContainer;
         }
 
         /// <summary>
@@ -155,8 +191,9 @@ namespace Gw2_WikiParser.Utility
             {
                 _log.Info($"Retrieving Category {catPage.Title}: {mainCategoryInfo.MembersCount} pages, {mainCategoryInfo.SubcategoriesCount} categories");
                 CategoryMembersGenerator categoryMembersGenerator = new CategoryMembersGenerator(catPage);
-                IEnumerable<WikiPage> pages = await categoryMembersGenerator.EnumPagesAsync().ToList();
-
+                List<WikiPage> pages = await categoryMembersGenerator.EnumPagesAsync().ToList();
+                pages = pages.Take(20).ToList();
+                
                 foreach (WikiPage page in pages)
                 {
                     CategoryInfoPropertyGroup categoryInfo = page.GetPropertyGroup<CategoryInfoPropertyGroup>();

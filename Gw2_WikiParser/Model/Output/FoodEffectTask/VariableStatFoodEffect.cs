@@ -32,7 +32,12 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
             {"Incoming Damage Reduction", StatType.IncomingDamageReduction.ToString() },
             {"Incoming Condition Damage", StatType.IncomingConditionDamage.ToString() },
             {"Incoming Condition Duration", StatType.IncomingConditionDuration.ToString() },
-            {"Incoming Stun Duration", StatType.IncomingStunDuration.ToString() }
+            {"Incoming Stun Duration", StatType.IncomingStunDuration.ToString() },
+            {"Endurance Regeneration", StatType.EnduranceRegeneration.ToString() },
+            {"Damage While Moving", StatType.DamageWhileMoving.ToString() },
+            {"Damage While Downed", StatType.DamageWhileDowned.ToString() },
+            {"Downed Health", StatType.DownedHealth.ToString() },
+            {"Movement Speed", StatType.MovementSpeed.ToString() }
         };
 
         public enum StatType
@@ -47,15 +52,20 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
             ChillDuration,
             Gold,
             MonsterGold,
+            MovementSpeed,
             WxpGain,
             IncomingDamageReduction,
             IncomingConditionDamage,
             IncomingConditionDuration,
             IncomingDamageStunned,
             IncomingStunDuration,
+            EnduranceRegeneration,
+            DamageWhileMoving,
+            DamageWhileDowned,
+            DownedHealth,                
         }
 
-        public VariableStatFoodEffect(string line)
+        public VariableStatFoodEffect(string line) : base(line)
         {
             Type = EffectType.Variable;
             ParseEffect(line);
@@ -76,6 +86,7 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
         {
             int value;
             StatType statType;
+            bool wasSuccessful = false;
 
             InvalidWords.ForEach((key, value) => line = line.RegexReplace(key, value, RegexOptions.IgnoreCase));
 
@@ -87,10 +98,11 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
                 {
                     Value = value;
                     AffectedStat = statType;
+                    wasSuccessful = true;
                 }
             }
 
-            return base.ParseEffect(line);
+            return wasSuccessful;
         }
 
         public static bool MatchLine(string line)

@@ -121,7 +121,7 @@ namespace Gw2_WikiParser.Tasks
             {
                 try
                 {
-                    File.WriteAllText(path, JsonConvert.SerializeObject(items), Encoding.UTF8);
+                    File.WriteAllText(path, JsonConvert.SerializeObject(items, Formatting.Indented), Encoding.UTF8);
                 }
                 catch (IOException ex)
                 {

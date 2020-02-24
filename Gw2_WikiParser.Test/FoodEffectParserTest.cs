@@ -11,38 +11,65 @@ namespace Gw2_WikiParser.Test
         [Fact]
         public void TestFlatStatEffect()
         {
-            FoodEffect foodEffectHealing = FoodEffect.GetEffect("+20 [[Healing Power]]");
-            Assert.IsType<FlatStatFoodEffect>(foodEffectHealing);
-            Assert.Equal(FlatStatFoodEffect.StatType.HealingPower, ((FlatStatFoodEffect)foodEffectHealing).AffectedStat);
-            Assert.Equal(20, ((FlatStatFoodEffect)foodEffectHealing).Value);
 
+
+
+
+            //Power,
             FoodEffect foodEffectPower = FoodEffect.GetEffect("+20 [[Power]]");
             Assert.IsType<FlatStatFoodEffect>(foodEffectPower);
             Assert.Equal(FlatStatFoodEffect.StatType.Power, ((FlatStatFoodEffect)foodEffectPower).AffectedStat);
             Assert.Equal(20, ((FlatStatFoodEffect)foodEffectPower).Value);
 
+            //Precision,
             FoodEffect foodEffectPrecision = FoodEffect.GetEffect("+20 [[Precision]]");
             Assert.IsType<FlatStatFoodEffect>(foodEffectPrecision);
             Assert.Equal(FlatStatFoodEffect.StatType.Precision, ((FlatStatFoodEffect)foodEffectPrecision).AffectedStat);
             Assert.Equal(20, ((FlatStatFoodEffect)foodEffectPrecision).Value);
 
+            //Ferocity,
             FoodEffect foodEffectFerocity = FoodEffect.GetEffect("+60 [[Ferocity]]");
             Assert.IsType<FlatStatFoodEffect>(foodEffectFerocity);
             Assert.Equal(FlatStatFoodEffect.StatType.Ferocity, ((FlatStatFoodEffect)foodEffectFerocity).AffectedStat);
             Assert.Equal(60, ((FlatStatFoodEffect)foodEffectFerocity).Value);
 
-            //Power,
-            //Precision,
-            //Ferocity,
             //Toughness,
+            FoodEffect foodEffectToughness = FoodEffect.GetEffect("+70 [[toughness]]");
+            Assert.IsType<FlatStatFoodEffect>(foodEffectToughness);
+            Assert.Equal(FlatStatFoodEffect.StatType.Toughness, ((FlatStatFoodEffect)foodEffectToughness).AffectedStat);
+            Assert.Equal(70, ((FlatStatFoodEffect)foodEffectToughness).Value);
             //Vitality,
+            FoodEffect foodEffectVitality = FoodEffect.GetEffect("+70 [[Vitality]]");
+            Assert.IsType<FlatStatFoodEffect>(foodEffectVitality);
+            Assert.Equal(FlatStatFoodEffect.StatType.Vitality, ((FlatStatFoodEffect)foodEffectVitality).AffectedStat);
+            Assert.Equal(70, ((FlatStatFoodEffect)foodEffectVitality).Value);
             //Concentration,
+            FoodEffect foodEffectConcentration = FoodEffect.GetEffect("+100 [[Concentration]]");
+            Assert.IsType<FlatStatFoodEffect>(foodEffectConcentration);
+            Assert.Equal(FlatStatFoodEffect.StatType.Concentration, ((FlatStatFoodEffect)foodEffectConcentration).AffectedStat);
+            Assert.Equal(100, ((FlatStatFoodEffect)foodEffectConcentration).Value);
             //ConditionDamage,
+            FoodEffect foodEffectConditionDamage = FoodEffect.GetEffect("+40 [[Condition Damage]]");
+            Assert.IsType<FlatStatFoodEffect>(foodEffectConditionDamage);
+            Assert.Equal(FlatStatFoodEffect.StatType.ConditionDamage, ((FlatStatFoodEffect)foodEffectConditionDamage).AffectedStat);
+            Assert.Equal(40, ((FlatStatFoodEffect)foodEffectConditionDamage).Value);
             //HealingPower,
+            FoodEffect foodEffectHealing = FoodEffect.GetEffect("+20 [[Healing Power]]");
+            Assert.IsType<FlatStatFoodEffect>(foodEffectHealing);
+            Assert.Equal(FlatStatFoodEffect.StatType.HealingPower, ((FlatStatFoodEffect)foodEffectHealing).AffectedStat);
+            Assert.Equal(20, ((FlatStatFoodEffect)foodEffectHealing).Value);
+
             //Expertise,
+            FoodEffect foodEffectExpertise = FoodEffect.GetEffect("+70 [[Expertise]]");
+            Assert.IsType<FlatStatFoodEffect>(foodEffectExpertise);
+            Assert.Equal(FlatStatFoodEffect.StatType.Expertise, ((FlatStatFoodEffect)foodEffectExpertise).AffectedStat);
+            Assert.Equal(70, ((FlatStatFoodEffect)foodEffectExpertise).Value);
+
             //AllAttributes
-
-
+            FoodEffect foodEffectAllStats = FoodEffect.GetEffect("+45 to All Attributes");
+            Assert.IsType<FlatStatFoodEffect>(foodEffectAllStats);
+            Assert.Equal(FlatStatFoodEffect.StatType.AllAttributes, ((FlatStatFoodEffect)foodEffectAllStats).AffectedStat);
+            Assert.Equal(45, ((FlatStatFoodEffect)foodEffectAllStats).Value);
         }
 
         [Fact]
@@ -153,6 +180,71 @@ namespace Gw2_WikiParser.Test
             Assert.IsType<VariableStatFoodEffect>(effectIncomingStunDuration);
             Assert.Equal(VariableStatFoodEffect.StatType.IncomingStunDuration, ((VariableStatFoodEffect)effectIncomingStunDuration).AffectedStat);
             Assert.Equal(-40, ((VariableStatFoodEffect)effectIncomingStunDuration).Value);
+
+            //EnduranceRegeneration,
+            FoodEffect effectEnduranceRegeneration = FoodEffect.GetEffect("+30% to [[Endurance]] Regeneration");
+            Assert.IsType<VariableStatFoodEffect>(effectEnduranceRegeneration);
+            Assert.Equal(VariableStatFoodEffect.StatType.EnduranceRegeneration, ((VariableStatFoodEffect)effectEnduranceRegeneration).AffectedStat);
+            Assert.Equal(30, ((VariableStatFoodEffect)effectEnduranceRegeneration).Value);
+
+            //DamageWhileMoving,
+            FoodEffect effectDamageWhileMoving = FoodEffect.GetEffect("+4% Damage While Moving");
+            Assert.IsType<VariableStatFoodEffect>(effectDamageWhileMoving);
+            Assert.Equal(VariableStatFoodEffect.StatType.DamageWhileMoving, ((VariableStatFoodEffect)effectDamageWhileMoving).AffectedStat);
+            Assert.Equal(4, ((VariableStatFoodEffect)effectDamageWhileMoving).Value);
+
+            //DownedHealth,
+            FoodEffect effectDownedHealth = FoodEffect.GetEffect("+80% [[Downed]] [[Health]]");
+            Assert.IsType<VariableStatFoodEffect>(effectDownedHealth);
+            Assert.Equal(VariableStatFoodEffect.StatType.DownedHealth, ((VariableStatFoodEffect)effectDownedHealth).AffectedStat);
+            Assert.Equal(80, ((VariableStatFoodEffect)effectDownedHealth).Value);
+
+            //DamageWhileDowned,
+            FoodEffect effectDamageWhileDowned = FoodEffect.GetEffect("+14% Damage While Downed");
+            Assert.IsType<VariableStatFoodEffect>(effectDamageWhileDowned);
+            Assert.Equal(VariableStatFoodEffect.StatType.DamageWhileDowned, ((VariableStatFoodEffect)effectDamageWhileDowned).AffectedStat);
+            Assert.Equal(14, ((VariableStatFoodEffect)effectDamageWhileDowned).Value);
+        }
+
+        [Fact]
+        public void TestContinuousHealthEffect()
+        {
+            FoodEffect effectIncomingStunDuration = FoodEffect.GetEffect("Gain [[Health]] Every Second");
+            Assert.IsType<ContinuousHealthFoodEffect>(effectIncomingStunDuration);
+        }
+
+        [Fact]
+        public void TestSpecialConditions()
+        {
+            FoodEffect effectHealthBelow50 = FoodEffect.GetEffect("+160 [[Power]] while Health Is Below 50%");
+            Assert.IsType<FlatStatFoodEffect>(effectHealthBelow50);
+            Assert.Equal(FlatStatFoodEffect.StatType.Power, ((FlatStatFoodEffect)effectHealthBelow50).AffectedStat);
+            Assert.Equal(160, ((FlatStatFoodEffect)effectHealthBelow50).Value);
+            Assert.Equal(FoodEffect.SpecialCondition.HealthBelow50Percent, effectHealthBelow50.Condition);
+
+            FoodEffect effectLunarNewYear = FoodEffect.GetEffect("+25% [[Magic Find]] during [[Lunar New Year]]");
+            Assert.IsType<VariableStatFoodEffect>(effectLunarNewYear);
+            Assert.Equal(VariableStatFoodEffect.StatType.MagicFind, ((VariableStatFoodEffect)effectLunarNewYear).AffectedStat);
+            Assert.Equal(25, ((VariableStatFoodEffect)effectLunarNewYear).Value);
+            Assert.Equal(FoodEffect.SpecialCondition.DuringLunarNewYear, effectLunarNewYear.Condition);
+
+        }
+
+        [Fact]
+        public void TestChanceEffects()
+        {
+            FoodEffect effectDay1 = FoodEffect.GetEffect("Day: 8% Chance to Burn on Critical Hit");
+            Assert.IsType<ChanceFoodEffect>(effectDay1);
+            Assert.Equal(ChanceFoodEffect.Action.Burn, ((ChanceFoodEffect)effectDay1).Effect);
+            Assert.Equal(8, ((ChanceFoodEffect)effectDay1).Chance);
+            Assert.Equal(FoodEffect.SpecialCondition.DuringDay, effectDay1.Condition);
+            Assert.Equal(FoodEffect.Trigger.CriticalHit, effectDay1.On);
+
+            FoodEffect effectStealLifeOnCrit = FoodEffect.GetEffect("40% Chance to [[Life steal|Steal Life]] on [[critical hit|Critical Hit]]");
+            Assert.IsType<ChanceFoodEffect>(effectStealLifeOnCrit);
+            Assert.Equal(ChanceFoodEffect.Action.LifeSteal, ((ChanceFoodEffect)effectStealLifeOnCrit).Effect);
+            Assert.Equal(40, ((ChanceFoodEffect)effectStealLifeOnCrit).Chance);
+            Assert.Equal(FoodEffect.Trigger.CriticalHit, effectStealLifeOnCrit.On);
         }
     }
 }

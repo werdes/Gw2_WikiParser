@@ -28,7 +28,7 @@ namespace Gw2_WikiParser.Utility
             lock (_accessTimes)
             {
                 _accessTimes.Enqueue(DateTime.Now);
-                while (_accessTimes.Count > 0  &&
+                while (_accessTimes.Count > 0 &&
                        _accessTimes.Peek() < DateTime.Now.AddMinutes(-1D))
                 {
                     _accessTimes.Dequeue();
@@ -59,9 +59,9 @@ namespace Gw2_WikiParser.Utility
         /// </summary>
         public void Wait()
         {
-            if (_accessTimes.Count >= _limit)
+            lock (_accessTimes)
             {
-                lock (_accessTimes)
+                if (_accessTimes.Count >= _limit)
                 {
                     _log.Info($"[{_name}] Waiting for Ratelimit {_accessTimes.Peek()}");
                     while (_accessTimes.Peek() > DateTime.Now.AddMinutes(-1D))
