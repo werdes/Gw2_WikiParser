@@ -28,6 +28,8 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
             {"during Lunar New Year", SpecialCondition.DuringLunarNewYear.ToString() },
             {"Health Is Below 50%", SpecialCondition.HealthBelow50Percent.ToString() },
             {"Health Below 50%", SpecialCondition.HealthBelow50Percent.ToString() },
+            {"Health Is Above 90%", SpecialCondition.HealthAbove90Percent.ToString() },
+            {"Health Above 90%", SpecialCondition.HealthAbove90Percent.ToString() },
 
 
 
@@ -35,6 +37,7 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
             {"on Critical Hit", Trigger.CriticalHit.ToString() },
             {"on Using a Heal Skill", Trigger.HealSkill.ToString() },
             {"on Dodge", Trigger.Dodge.ToString() },
+            {"on Kill effect", Trigger.Kill.ToString() },
             {"on Kill", Trigger.Kill.ToString() },
             {"When You Kill a Foe", Trigger.Kill.ToString() },
             {"on Dismount", Trigger.Dismount.ToString() }
@@ -54,7 +57,8 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
             DuringDay,
             DuringNight,
             DuringLunarNewYear,
-            HealthBelow50Percent
+            HealthBelow50Percent,
+            HealthAbove90Percent
         }
 
         public enum Trigger

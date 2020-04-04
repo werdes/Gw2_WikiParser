@@ -156,6 +156,10 @@ namespace Gw2_WikiParser.Test
             Assert.IsType<VariableStatFoodEffect>(effectIncomingDamage);
             Assert.Equal(VariableStatFoodEffect.StatType.IncomingDamageReduction, ((VariableStatFoodEffect)effectIncomingDamage).AffectedStat);
             Assert.Equal(-10, ((VariableStatFoodEffect)effectIncomingDamage).Value);
+            FoodEffect effectIncomingDamage2 = FoodEffect.GetEffect("-10% Incoming Damage");
+            Assert.IsType<VariableStatFoodEffect>(effectIncomingDamage2);
+            Assert.Equal(VariableStatFoodEffect.StatType.IncomingDamageReduction, ((VariableStatFoodEffect)effectIncomingDamage2).AffectedStat);
+            Assert.Equal(-10, ((VariableStatFoodEffect)effectIncomingDamage2).Value);
 
             //IncomingConditionDamage,
             FoodEffect effectIncomingConditionDamage = FoodEffect.GetEffect("-5% Incoming [[Condition]] Damage");

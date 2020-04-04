@@ -46,9 +46,6 @@ namespace Gw2_WikiParser.Utility
 
             _site = new WikiSite(_client, wikiUrl);
             _site.Initialization.Wait();
-
-            _cache.Import(ConfigurationManager.AppSettings["cache"].Format(
-                ApiWrapper.Instance.GetBuildId()));
         }
 
         /// <summary>
@@ -71,6 +68,7 @@ namespace Gw2_WikiParser.Utility
             }
 
             WikiPage page = new WikiPage(_site, title);
+            
             await page.RefreshAsync(PageQueryOptions.FetchContent | PageQueryOptions.ResolveRedirects);
 
             _ratelimitHandler.Set();
@@ -124,8 +122,7 @@ namespace Gw2_WikiParser.Utility
         {
             List<(string, string, RdfGraphContainer)> lstMember = new List<(string, string, RdfGraphContainer)>();
             List<WikiPage> pages = await GetCategoryMembers(categoryTitle);
-            //pages = pages.Where(x => x.Title.Contains("Revelry Starcake") || x.Title.Contains("Bowl of Chocolate Chip Ice Cream")).ToList();
-
+            
             foreach (WikiPage page in pages)
             {
                 if (_cache.Contains(page.Title) && caching)
@@ -160,7 +157,7 @@ namespace Gw2_WikiParser.Utility
         /// </summary>
         /// <param name="pageName"></param>
         /// <returns></returns>
-        private RdfGraphContainer GetRdfGraph(string pageName)
+        public RdfGraphContainer GetRdfGraph(string pageName)
         {
             _ratelimitHandler.Wait();
             string url = ConfigurationManager.AppSettings["wiki_rdf_url"] + pageName;
@@ -192,7 +189,7 @@ namespace Gw2_WikiParser.Utility
                 _log.Info($"Retrieving Category {catPage.Title}: {mainCategoryInfo.MembersCount} pages, {mainCategoryInfo.SubcategoriesCount} categories");
                 CategoryMembersGenerator categoryMembersGenerator = new CategoryMembersGenerator(catPage);
                 List<WikiPage> pages = await categoryMembersGenerator.EnumPagesAsync().ToList();
-                pages = pages.Take(20).ToList();
+                //pages = pages.Where(x => x.Title == "Feast of Rosemary-Roasted Meat").Take(20).ToList();
                 
                 foreach (WikiPage page in pages)
                 {

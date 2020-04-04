@@ -36,7 +36,17 @@ namespace Gw2_WikiParser.Extensions
         public static string RegexReplace(this string s, string oldValue, string newValue, RegexOptions options)
         {
             return Regex.Replace(s, Regex.Escape(oldValue), newValue.Replace("$", "$$"), options);
-            
+        }
+
+        public static string StripHtml(this string s)
+        {
+            return Regex.Replace(s, @"</?\w+((\s+\w+(\s*=\s*(?:"".*?""|'.*?'|[^'"">\s]+))?)+\s*|\s*)/?>", string.Empty);
+        }
+
+        public static bool IsNumeric(this string s)
+        {
+            long dummy;
+            return long.TryParse(s, out dummy);
         }
     }
 }

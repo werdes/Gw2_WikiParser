@@ -26,7 +26,7 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
             {"Chance Burn", Action.Burn.ToString() },
             {"Chance GainHealth", Action.GainHealth.ToString() },
             {"Seconds of Quickness", Action.GainQuickness.ToString() },
-            {"to Gain Swiftness", Action.GainSwiftness.ToString() },
+            {"Gain Swiftness", Action.GainSwiftness.ToString() },
             {"Lose a Condition", Action.LoseCondition.ToString() },
         };
 

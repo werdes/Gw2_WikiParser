@@ -37,7 +37,8 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
             {"Damage While Moving", StatType.DamageWhileMoving.ToString() },
             {"Damage While Downed", StatType.DamageWhileDowned.ToString() },
             {"Downed Health", StatType.DownedHealth.ToString() },
-            {"Movement Speed", StatType.MovementSpeed.ToString() }
+            {"Movement Speed", StatType.MovementSpeed.ToString() },
+            {"Incoming Damage,", StatType.IncomingDamageReduction.ToString() }
         };
 
         public enum StatType

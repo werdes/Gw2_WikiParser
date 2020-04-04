@@ -16,6 +16,9 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
         [JsonProperty("id")]
         public int Id { get; set; }
 
+        [JsonProperty("is_feast")]
+        public bool IsFeast { get; set; }
+
         [JsonProperty("name")]
         public string Name { get; set; }
 
