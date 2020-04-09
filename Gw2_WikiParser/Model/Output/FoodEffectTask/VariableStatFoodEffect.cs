@@ -1,4 +1,5 @@
-﻿using Gw2_WikiParser.Extensions;
+﻿using Gw2_WikiParser.Exceptions;
+using Gw2_WikiParser.Extensions;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using System;
@@ -12,7 +13,7 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
 
     public class VariableStatFoodEffect : FoodEffect
     {
-        private static Regex _regexValue = new Regex("[+-]?\\d+(\\.\\d{1,4})? *(?=%)", RegexOptions.Compiled);
+        private static Regex _regexValue = new Regex("[+-]?\\d+(\\.\\d{1,4})? *(?=%)*", RegexOptions.Compiled);
         private static Regex _regexAffectedStat = new Regex($"\\b(\\w*({Enum.GetNames(typeof(StatType)).Join("|")})\\w*)\\b", RegexOptions.IgnoreCase);
 
         public new static Dictionary<string, string> InvalidWords = new Dictionary<string, string>(FoodEffect.InvalidWords)
@@ -20,6 +21,7 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
             {"Magic Find", StatType.MagicFind.ToString() },
             {"Healing Effectiveness (Outgoing)", StatType.OutgoingHealing.ToString() },
             {"Outgoing Healing", StatType.OutgoingHealing.ToString() },
+            {"Outgoing HealingPower", StatType.OutgoingHealing.ToString() },
             {"Experience from Kills", StatType.KillExperience.ToString() },
             {"All Experience Gained", StatType.Experience.ToString() },
             {"Poison Duration", StatType.PoisonDuration.ToString() },
@@ -38,7 +40,12 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
             {"Damage While Downed", StatType.DamageWhileDowned.ToString() },
             {"Downed Health", StatType.DownedHealth.ToString() },
             {"Movement Speed", StatType.MovementSpeed.ToString() },
-            {"Incoming Damage,", StatType.IncomingDamageReduction.ToString() }
+            {"Incoming Damage", StatType.IncomingDamageReduction.ToString() }
+        };
+
+        public new static Dictionary<Regex, string> RegexReplacementMatches = new Dictionary<Regex, string>(FoodEffect.RegexReplacementMatches)
+        {
+
         };
 
         public enum StatType
@@ -69,7 +76,11 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
         public VariableStatFoodEffect(string line) : base(line)
         {
             Type = EffectType.Variable;
-            ParseEffect(line);
+
+            if (!ParseEffect(line))
+            {
+                throw new UnmatchedFoodEffectException(line);
+            }
         }
 
         [JsonConverter(typeof(StringEnumConverter))]
@@ -79,9 +90,6 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
         [JsonProperty("value")]
         public int Value { get; set; }
 
-        [JsonProperty("condition")]
-        public string Condition { get; set; }
-
 
         public override bool ParseEffect(string line)
         {
@@ -89,13 +97,15 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
             StatType statType;
             bool wasSuccessful = false;
 
-            InvalidWords.ForEach((key, value) => line = line.RegexReplace(key, value, RegexOptions.IgnoreCase));
+            line = FoodEffect.NormalizeLine(line, VariableStatFoodEffect.InvalidWords, VariableStatFoodEffect.RegexReplacementMatches);
 
             if (_regexValue.Match(line).Success &&
                _regexAffectedStat.Match(line).Success)
             {
-                if (int.TryParse(_regexValue.Match(line).Value, out value) &&
-                   Enum.TryParse(_regexAffectedStat.Match(line).Value, out statType))
+                string valueMatch = _regexValue.Match(line).Value;
+                string statTypeMatch = _regexAffectedStat.Match(line).Value;
+                if (int.TryParse(valueMatch, out value) &&
+                   Enum.TryParse(statTypeMatch, out statType))
                 {
                     Value = value;
                     AffectedStat = statType;
@@ -108,7 +118,7 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
 
         public static bool MatchLine(string line)
         {
-            InvalidWords.ForEach((key, value) => line = line.RegexReplace(key, value, RegexOptions.IgnoreCase));
+            line = FoodEffect.NormalizeLine(line, VariableStatFoodEffect.InvalidWords, VariableStatFoodEffect.RegexReplacementMatches);
             return _regexValue.IsMatch(line) &&
                    _regexAffectedStat.IsMatch(line);
         }

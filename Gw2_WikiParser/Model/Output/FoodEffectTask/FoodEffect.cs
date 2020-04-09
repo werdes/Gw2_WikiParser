@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
 
@@ -19,6 +20,8 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
         protected static Dictionary<string, string> InvalidWords = new Dictionary<string, string>()
         {
             {" to ", " " },
+            {"Outgoing [[Healing]]", VariableStatFoodEffect.StatType.OutgoingHealing.ToString() },
+            {"[[Healing]]", FlatStatFoodEffect.StatType.HealingPower.ToString() },
             {"[[", "" },
             {"]]", "" },
             {"Night:", SpecialCondition.DuringNight.ToString() },
@@ -33,14 +36,19 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
 
 
 
-
-            {"on Critical Hit", Trigger.CriticalHit.ToString() },
-            {"on Using a Heal Skill", Trigger.HealSkill.ToString() },
-            {"on Dodge", Trigger.Dodge.ToString() },
-            {"on Kill effect", Trigger.Kill.ToString() },
-            {"on Kill", Trigger.Kill.ToString() },
+            {"Critical Hit", Trigger.CriticalHit.ToString() },
+            {"Using a Heal Skill", Trigger.HealSkill.ToString() },
+            {"Using a Healing Skill", Trigger.HealSkill.ToString() },
+            {"Dodge", Trigger.Dodge.ToString() },
+            {"Kill effect", Trigger.Kill.ToString() },
+            {"Kill", Trigger.Kill.ToString() },
             {"When You Kill a Foe", Trigger.Kill.ToString() },
             {"on Dismount", Trigger.Dismount.ToString() }
+        };
+
+        protected static Dictionary<Regex, string> RegexReplacementMatches = new Dictionary<Regex, string>()
+        {
+
         };
 
         public enum EffectType
@@ -48,7 +56,8 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
             Flat,
             Variable,
             Chance,
-            ContinuousHealth
+            ContinuousHealth,
+            Static
         }
 
         public enum SpecialCondition
@@ -163,7 +172,18 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
             {
                 return new ChanceFoodEffect(line);
             }
+            else if (StaticFoodEffect.MatchLine(line))
+            {
+                return new StaticFoodEffect(line);
+            }
             else throw new UnmatchedFoodEffectException(line);
+        }
+
+        protected static string NormalizeLine(string line, Dictionary<string, string> invalidWords, Dictionary<Regex, string> regexReplacementMatches)
+        {
+            invalidWords.ForEach((key, value) => line = line.RegexReplace(key, value, RegexOptions.IgnoreCase));
+            regexReplacementMatches.ForEach((regex, replacement) => line = regex.Replace(line, replacement));
+            return line;
         }
     }
 

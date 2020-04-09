@@ -19,7 +19,7 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
 
         public static bool MatchLine(string line)
         {
-            InvalidWords.ForEach((key, value) => line = line.RegexReplace(key, value, RegexOptions.IgnoreCase));
+            line = FoodEffect.NormalizeLine(line, FoodEffect.InvalidWords, FoodEffect.RegexReplacementMatches);
             return _regexDescription.IsMatch(line);
         }
     }

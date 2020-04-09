@@ -17,4 +17,10 @@
     <ProjectReference Include="..\Gw2_WikiParser\Gw2_WikiParser.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Resources\lines.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

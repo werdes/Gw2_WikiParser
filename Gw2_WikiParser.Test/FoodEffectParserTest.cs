@@ -1,13 +1,23 @@
-﻿using Gw2_WikiParser.Model.Output.FoodEffectTask;
+﻿using Gw2_WikiParser.Exceptions;
+using Gw2_WikiParser.Model.Output.FoodEffectTask;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 using Xunit;
+using Xunit.Abstractions;
 
 namespace Gw2_WikiParser.Test
 {
     public class FoodEffectParserTest
     {
+        private ITestOutputHelper _output;
+
+        public FoodEffectParserTest(ITestOutputHelper output)
+        {
+            _output = output;
+        }
+
         [Fact]
         public void TestFlatStatEffect()
         {
@@ -81,7 +91,7 @@ namespace Gw2_WikiParser.Test
             Assert.Equal(VariableStatFoodEffect.StatType.MagicFind, ((VariableStatFoodEffect)effectMagicFind).AffectedStat);
             Assert.Equal(18, ((VariableStatFoodEffect)effectMagicFind).Value);
 
-            //OutgoingHealing,
+            //OutgoingHealing, +10% Outgoing [[Healing]]
             FoodEffect effectOutgoingHealing = FoodEffect.GetEffect("+10% Healing Effectiveness (Outgoing)");
             Assert.IsType<VariableStatFoodEffect>(effectOutgoingHealing);
             Assert.Equal(VariableStatFoodEffect.StatType.OutgoingHealing, ((VariableStatFoodEffect)effectOutgoingHealing).AffectedStat);
@@ -91,6 +101,11 @@ namespace Gw2_WikiParser.Test
             Assert.IsType<VariableStatFoodEffect>(effectOutgoingHealing2);
             Assert.Equal(VariableStatFoodEffect.StatType.OutgoingHealing, ((VariableStatFoodEffect)effectOutgoingHealing2).AffectedStat);
             Assert.Equal(10, ((VariableStatFoodEffect)effectOutgoingHealing2).Value);
+
+            FoodEffect effectOutgoingHealing3 = FoodEffect.GetEffect("+10% Outgoing [[Healing]]");
+            Assert.IsType<VariableStatFoodEffect>(effectOutgoingHealing3);
+            Assert.Equal(VariableStatFoodEffect.StatType.OutgoingHealing, ((VariableStatFoodEffect)effectOutgoingHealing3).AffectedStat);
+            Assert.Equal(10, ((VariableStatFoodEffect)effectOutgoingHealing3).Value);
 
             //Experience,
             FoodEffect effectAllExperience = FoodEffect.GetEffect("+1% All [[Experience]] Gained");
@@ -239,7 +254,7 @@ namespace Gw2_WikiParser.Test
         {
             FoodEffect effectDay1 = FoodEffect.GetEffect("Day: 8% Chance to Burn on Critical Hit");
             Assert.IsType<ChanceFoodEffect>(effectDay1);
-            Assert.Equal(ChanceFoodEffect.Action.Burn, ((ChanceFoodEffect)effectDay1).Effect);
+            Assert.Equal(ChanceFoodEffect.Action.InflictBurning, ((ChanceFoodEffect)effectDay1).Effect);
             Assert.Equal(8, ((ChanceFoodEffect)effectDay1).Chance);
             Assert.Equal(FoodEffect.SpecialCondition.DuringDay, effectDay1.Condition);
             Assert.Equal(FoodEffect.Trigger.CriticalHit, effectDay1.On);
@@ -249,6 +264,38 @@ namespace Gw2_WikiParser.Test
             Assert.Equal(ChanceFoodEffect.Action.LifeSteal, ((ChanceFoodEffect)effectStealLifeOnCrit).Effect);
             Assert.Equal(40, ((ChanceFoodEffect)effectStealLifeOnCrit).Chance);
             Assert.Equal(FoodEffect.Trigger.CriticalHit, effectStealLifeOnCrit.On);
+        }
+
+        [Fact]
+        public void TestStaticEffects()
+        {
+            FoodEffect effectCausesGastricDistress = FoodEffect.GetEffect("May Cause Intermittent Gastric Distress");
+            Assert.IsType<StaticFoodEffect>(effectCausesGastricDistress);
+            Assert.Equal(StaticFoodEffect.StaticEffect.CausesIntermittentGastricDistress, ((StaticFoodEffect)effectCausesGastricDistress).Effect);
+            Assert.Equal(FoodEffect.SpecialCondition.None, effectCausesGastricDistress.Condition);
+            Assert.Equal(FoodEffect.Trigger.None, effectCausesGastricDistress.On);
+        }
+
+        [Fact]
+        public void TestList()
+        {
+            string[] lines = File.ReadAllLines("Resources/lines.txt", Encoding.UTF8);
+            bool errors = false;
+
+            foreach (string line in lines)
+            {
+                try
+                {
+                    FoodEffect effect = FoodEffect.GetEffect(line);
+                }
+                catch(UnmatchedFoodEffectException ex)
+                {
+                    _output.WriteLine(ex.Line);
+                    errors = true;
+                }
+            }
+
+            Assert.False(errors);
         }
     }
 }

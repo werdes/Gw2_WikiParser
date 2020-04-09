@@ -20,7 +20,7 @@ namespace Gw2_WikiParser
             List<IWikiTask> tasks = new List<IWikiTask>();
             try
             {
-                //tasks.Add(new BulkIngredientTask(new string[] { "Category:Bulk_foods" }));
+                tasks.Add(new BulkIngredientTask(new string[] { "Category:Bulk_foods" }));
                 tasks.Add(new FoodEffectTask(ConfigurationManager.AppSettings["food_effects_categories"].Split(';')));
 
                 _log.Info("Running tasks:");
@@ -28,9 +28,6 @@ namespace Gw2_WikiParser
                 _log.Info("-------------------------");
 
                 Task.WaitAll(tasks.Select(x => x.Run()).ToArray());
-
-                //InternalCache.Instance.Export(ConfigurationManager.AppSettings["cache"].Format(
-                //ApiWrapper.Instance.GetBuildId()));
             }
             catch (Exception ex)
             {

@@ -10,6 +10,7 @@ using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using VDS.RDF;
 
@@ -20,6 +21,7 @@ namespace Gw2_WikiParser.Tasks
         private readonly log4net.ILog _log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         private string[] _categories;
         private readonly string _errorFile = Path.Combine(ConfigurationManager.AppSettings["food_effects_error_dir"], "unmatched_effects.txt");
+        private readonly string _allEffectsFile = Path.Combine(ConfigurationManager.AppSettings["food_effects_error_dir"], "all_effects.txt");
 
         public FoodEffectTask(string[] categories)
         {
@@ -28,6 +30,8 @@ namespace Gw2_WikiParser.Tasks
             if (File.Exists(_errorFile))
                 File.Delete(_errorFile);
 
+            if (File.Exists(_allEffectsFile))
+                File.Delete(_allEffectsFile);
         }
 
         public async Task<bool> Run()
@@ -93,11 +97,13 @@ namespace Gw2_WikiParser.Tasks
                         tripleNourishmentBonus.Object is LiteralNode)
                     {
                         string[] nourishmentBonusLines = ((LiteralNode)tripleNourishmentBonus.Object).Value.Split("<br>", StringSplitOptions.RemoveEmptyEntries);
+                        File.AppendAllLines(_allEffectsFile, nourishmentBonusLines, Encoding.UTF8);
                         food = new Food()
                         {
                             Id = id,
                             Name = pageTitle,
-                            DurationSeconds = GetDuration(graphContainer, pageTitle)
+                            DurationSeconds = GetDuration(graphContainer, pageTitle),
+                            IsFeast = GetFeastStatus(graphContainer, pageTitle)
                         };
 
                         foreach (string line in nourishmentBonusLines)
@@ -152,6 +158,19 @@ namespace Gw2_WikiParser.Tasks
             return food;
         }
 
+        private bool GetFeastStatus(RdfGraphContainer graphContainer, string pageTitle)
+        {
+            Triple tripleItemType = graphContainer.GetGraph().Triples.Where(x => x.Nodes.Any(y => y.NodeType == NodeType.Uri && ((UriNode)y).Uri.ToString().EndsWith("Property-3AHas_item_type"))).FirstOrDefault();
+
+            if (tripleItemType != null &&
+                tripleItemType.Object is LiteralNode &&
+                ((LiteralNode)tripleItemType.Object).Value.Contains("Feast", StringComparison.OrdinalIgnoreCase))
+            {
+                return true;
+            }
+            return false;
+        }
+
         private int GetDuration(RdfGraphContainer graph, string pageTitle)
         {
             int duration;
@@ -159,10 +178,24 @@ namespace Gw2_WikiParser.Tasks
             if (tripleDuration != null &&
                tripleDuration.Object is LiteralNode)
             {
-                string value = ((LiteralNode)tripleDuration.Object).Value.Split(" ", StringSplitOptions.RemoveEmptyEntries).First();
-                if (int.TryParse(value, out duration))
+                string value = ((LiteralNode)tripleDuration.Object).Value;
+                Regex regex = new Regex(@"((\\+|\\-)* *([0-9]+ *))");
+
+                if (regex.IsMatch(value) &&
+                    int.TryParse(regex.Match(value).Value, out duration))
                 {
-                    return (int)TimeSpan.FromMinutes(duration).TotalSeconds;
+                    if (value.Trim().EndsWith("m"))
+                    {
+                        return (int)TimeSpan.FromMinutes(duration).TotalSeconds;
+                    }
+                    else if (value.Trim().EndsWith("h"))
+                    {
+                        return (int)TimeSpan.FromHours(duration).TotalSeconds;
+                    }
+                    else
+                    {
+                        throw new InvalidFoodDurationException(pageTitle);
+                    }
                 }
                 else
                 {
@@ -184,6 +217,8 @@ namespace Gw2_WikiParser.Tasks
         private async Task<Food> ResolveFeast(string pageTitle, RdfGraphContainer graphContainer)
         {
             int recipeId;
+            string ingredientName = null;
+
 
             //Parsing Feasts
             Triple tripleItemType = graphContainer.GetGraph().Triples.Where(x => x.Nodes.Any(y => y.NodeType == NodeType.Uri && ((UriNode)y).Uri.ToString().EndsWith("Property-3AHas_item_type"))).FirstOrDefault();
@@ -200,7 +235,14 @@ namespace Gw2_WikiParser.Tasks
                     tripleRecipeId.Object is LiteralNode &&
                     int.TryParse(((LiteralNode)tripleRecipeId.Object).Value, out recipeId))
                 {
-                    string ingredientName = await ApiWrapper.Instance.GetSingleIngredientNameForRecipeId(recipeId);
+                    try
+                    {
+                        ingredientName = await ApiWrapper.Instance.GetSingleIngredientNameForRecipeId(recipeId);
+                    }
+                    catch (Gw2Sharp.WebApi.Http.NotFoundException)
+                    {
+                        _log.Error($"Could not resolve recipe for {recipeId}");
+                    }
 
                     if (!string.IsNullOrEmpty(ingredientName))
                     {
@@ -215,33 +257,6 @@ namespace Gw2_WikiParser.Tasks
                 }
 
 
-                //Triple tripleIngredientName = graphContainer.GetGraph().Triples.Where(x => x.Nodes.Any(y => y.NodeType == NodeType.Uri && ((UriNode)y).Uri.ToString().EndsWith("Property-3AHas_ingredient_name"))).FirstOrDefault();
-
-                //if (tripleIngredientName != null &&
-                //    tripleIngredientName.Object is UriNode)
-                //{
-                //string ingredientPageTitle = ((UriNode)tripleIngredientName.Object).Uri.LocalPath.Split("/", StringSplitOptions.RemoveEmptyEntries).LastOrDefault();
-                //(_, string ingredientPageContent) = await WikiWrapper.Instance.GetPageContent(ingredientPageTitle);
-                //RdfGraphContainer ingredientGraphContainer = WikiWrapper.Instance.GetRdfGraph(ingredientPageTitle);
-
-                //Triple tripleCanonicalName = ingredientGraphContainer.GetGraph().Triples.Where(x => x.Nodes.Any(y => y.NodeType == NodeType.Uri && ((UriNode)y).Uri.ToString().EndsWith("Property-3AHas_canonical_name"))).FirstOrDefault();
-
-                //if (tripleCanonicalName != null &&
-                //    tripleCanonicalName.Object is LiteralNode)
-                //{
-                //    string canonicalName = ((LiteralNode)tripleCanonicalName.Object).Value;
-
-                //    return await ParseFood(canonicalName, ingredientPageContent, ingredientGraphContainer);
-                //}
-                //else
-                //{
-                //    _log.Warn($"{pageTitle} does not contain canonical name");
-                //}
-                //}
-                //else
-                //{
-                //    _log.Warn($"{pageTitle} does not contain ingredient information, cannot resolve");
-                //}
             }
             return null;
         }

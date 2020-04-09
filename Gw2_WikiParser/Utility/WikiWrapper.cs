@@ -122,7 +122,7 @@ namespace Gw2_WikiParser.Utility
         {
             List<(string, string, RdfGraphContainer)> lstMember = new List<(string, string, RdfGraphContainer)>();
             List<WikiPage> pages = await GetCategoryMembers(categoryTitle);
-            
+
             foreach (WikiPage page in pages)
             {
                 if (_cache.Contains(page.Title) && caching)
@@ -189,7 +189,6 @@ namespace Gw2_WikiParser.Utility
                 _log.Info($"Retrieving Category {catPage.Title}: {mainCategoryInfo.MembersCount} pages, {mainCategoryInfo.SubcategoriesCount} categories");
                 CategoryMembersGenerator categoryMembersGenerator = new CategoryMembersGenerator(catPage);
                 List<WikiPage> pages = await categoryMembersGenerator.EnumPagesAsync().ToList();
-                //pages = pages.Where(x => x.Title == "Feast of Rosemary-Roasted Meat").Take(20).ToList();
                 
                 foreach (WikiPage page in pages)
                 {

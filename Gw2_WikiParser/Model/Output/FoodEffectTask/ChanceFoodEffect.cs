@@ -1,4 +1,5 @@
-﻿using Gw2_WikiParser.Extensions;
+﻿using Gw2_WikiParser.Exceptions;
+using Gw2_WikiParser.Extensions;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using System;
@@ -16,25 +17,40 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
 
         public new static Dictionary<string, string> InvalidWords = new Dictionary<string, string>(FoodEffect.InvalidWords)
         {
+            {"Burning|Burn", Action.InflictBurning.ToString() },
+            {"Life stealing|Steal Life", Action.LifeSteal.ToString() },
             {"Chance Steal Life", Action.LifeSteal.ToString() },
             {"Chance Life Steal", Action.LifeSteal.ToString() },
             {"Chance Gain Might", Action.GainMight.ToString() },
             {"Chance Might Gain", Action.GainMight.ToString() },
+            {"Chance Gain Health", Action.GainHealth.ToString() },
+            {"Chance Health Gain", Action.GainHealth.ToString() },
+            {"Chance GainHealth", Action.GainHealth.ToString() },
             {"Chance Gain Fury", Action.GainFury.ToString() },
             {"Chance Remove a Condition", Action.ConditionRemove.ToString() },
             {"Chance Inflict Chill", Action.InflictChill.ToString() },
-            {"Chance Burn", Action.Burn.ToString() },
-            {"Chance GainHealth", Action.GainHealth.ToString() },
+            {"Chance Burn", Action.InflictBurning.ToString() },
+            {"Chance Inflict Burning", Action.InflictBurning.ToString() },
             {"Seconds of Quickness", Action.GainQuickness.ToString() },
             {"Gain Swiftness", Action.GainSwiftness.ToString() },
-            {"Lose a Condition", Action.LoseCondition.ToString() },
+            {"Gain Might", Action.GainMight.ToString() },
+            {"Gain Health", Action.GainHealth.ToString() },
+            {"Lose a Condition", Action.LoseCondition.ToString() }
+        };
+
+        public new static Dictionary<Regex, string> RegexReplacementMatches = new Dictionary<Regex, string>(FoodEffect.RegexReplacementMatches)
+        {
+            {new Regex(@"(Inflict Chill[A-Za-z0-9 ,]*Burning[A-Za-z0-9 ,]*Poisoned)", RegexOptions.IgnoreCase), Action.InflictChillBurningPoisoned.ToString() }
         };
 
         public ChanceFoodEffect(string line) : base(line)
         {
             Type = EffectType.Chance;
 
-            ParseEffect(line);
+            if (!ParseEffect(line))
+            {
+                throw new UnmatchedFoodEffectException(line);
+            }
         }
 
         public enum Action
@@ -45,10 +61,11 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
             GainHealth,
             GainFury,
             InflictChill,
-            Burn,
+            InflictBurning,
             GainQuickness,
             GainSwiftness,
-            LoseCondition
+            LoseCondition,
+            InflictChillBurningPoisoned
         }
 
 
@@ -66,15 +83,29 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
             Action action;
             bool wasSuccessful = false;
 
-            InvalidWords.ForEach((key, value) => line = line.RegexReplace(key, value, RegexOptions.IgnoreCase));
+            line = FoodEffect.NormalizeLine(line, ChanceFoodEffect.InvalidWords, ChanceFoodEffect.RegexReplacementMatches);
 
             if (_regexValue.Match(line).Success &&
                _regexActions.Match(line).Success)
             {
-                if (int.TryParse(_regexValue.Match(line).Value, out value) &&
-                   Enum.TryParse(_regexActions.Match(line).Value, out action))
+                string valueMatch = _regexValue.Match(line).Value;
+                string actionMatch = _regexActions.Match(line).Value;
+
+                if (int.TryParse(valueMatch, out value) &&
+                   Enum.TryParse(actionMatch, out action))
                 {
                     Chance = value;
+                    Effect = action;
+                    wasSuccessful = true;
+                }
+            }
+            else if (!_regexValue.Match(line).Success &&
+                     _regexActions.Match(line).Success)
+            {
+                if (Enum.TryParse(_regexActions.Match(line).Value, out action))
+                {
+                    //Action found, but no Value -> probably 100%
+                    Chance = 100;
                     Effect = action;
                     wasSuccessful = true;
                 }
@@ -86,9 +117,8 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
 
         public static bool MatchLine(string line)
         {
-            InvalidWords.ForEach((key, value) => line = line.RegexReplace(key, value, RegexOptions.IgnoreCase));
-            return _regexActions.IsMatch(line) &&
-                   _regexValue.IsMatch(line);
+            line = FoodEffect.NormalizeLine(line, ChanceFoodEffect.InvalidWords, ChanceFoodEffect.RegexReplacementMatches);
+            return _regexActions.IsMatch(line);
         }
     }
 }

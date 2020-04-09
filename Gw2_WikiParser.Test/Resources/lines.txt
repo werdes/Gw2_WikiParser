@@ -1,0 +1,2595 @@
+﻿+80 [[Precision]]
++60 [[Vitality]]
++10% [[Experience]] from Kills
+-4% Incoming [[Condition Duration]]
+10% [[Experience]] from Kills
++12 [[Ferocity]]
++10% [[Experience]] from kills
++30 [[Precision]]
++10% [[Experience]] from Kills
++80 [[Precision]]
++60 [[Ferocity]]
++10% [[Experience]] from Kills
+Gain [[Health]] Every Second
++70 [[Toughness]]
++10% [[Experience]] from Kills
++100 [[Concentration]]
++70 [[Expertise]]
++1% All [[Experience]] Gained
++60 [[Precision]]
++50 [[Ferocity]]
++10% [[Experience]] from Kills
+-16% Incoming [[Condition Duration]]
++50 [[Vitality]]
++10% [[Experience]] from Kills
++60 [[Precision]]
++50 [[Vitality]]
++10% [[Experience]] from Kills
++7% [[Burning]] Duration
++40 [[Precision]]
++10% [[Experience]] from Kills
+-8% Incoming [[Condition Duration]]
+10% [[Experience]] from Kills
++12 [[Power]]
++50 [[Condition Damage]]
++40 [[Vitality]]
++10% [[Experience]] from Kills
++100 [[Precision]]
++70 [[Ferocity]]
++10% [[Experience]] from Kills
+-10% Incoming [[Damage Reduction|Damage]]
+-5% Incoming [[Condition]] Damage
++10% [[Experience]] from Kills
++100 [[Precision]]
++70 [[Vitality]]
++10% [[Experience]] from Kills
++30 [[Ferocity]]
+Day: 12% Chance to [[Burning|Burn]] on [[Critical hit|Critical Hit]]
+Night: 12% Chance to [[Life stealing|Steal Life]] on Critical Hit
++10% [[Experience]] from Kills
+-12% Incoming [[Condition Duration]]
++40 [[Vitality]]
++10% [[Experience]] from Kills
++12 [[vitality]]
++20 [[Ferocity]]
+Day: 8% Chance to [[Burning|Burn]] on [[Critical hit|Critical Hit]]
+Night: 8% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++10% [[Experience]] from Kills
++60 [[Condition Damage]]
++50 [[Vitality]]
++10% [[Experience]] from Kills
++100 [[Precision]]
++70 [[Condition Damage]]
++10% [[Experience]] from Kills
++15% [[Burning]] Duration
++70 [[Precision]]
++10% [[Experience]] from Kills
++50 [[Ferocity]]
+Day: 20% Chance to [[Burning|Burn]] on [[Critical hit|Critical Hit]]
+Night: 20% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++10% [[Experience]] from Kills
++100 [[Concentration]]
++70 [[Expertise]]
++1% All [[Experience]] Gained
+May Cause Intermittent Gastric Distress
++20 [[Healing]]
++10% [[Experience]] from Kills
++3% [[Burning]] Duration
++10% [[Experience]] from Kills
+60% Chance to Remove a [[Condition]] on Using a [[Healing skill|Heal Skill]]
++50 [[Healing Power|Healing]]
++10% [[Experience]] from Kills
+30% Chance to Gain [[Might]] on [[Dodge]]
++10% [[Experience]] from Kills
+50% Chance to Gain Might on [[Dodge]]
++10% to [[Endurance]] Regeneration
++10% [[Experience]] from Kills
+50% Chance to Remove a [[Condition]] on Using a [[Healing skill|Heal Skill]]
++40 [[Healing Power|Healing]]
++10% [[Experience]] from Kills
++50 [[Precision]]
++40 [[Vitality]]
++10% [[Experience]] from Kills
+50% Chance to Remove a [[Condition]] on Using a [[Healing skill|Heal Skill]]
++40 [[Healing Power|Healing]]
++10% [[Experience]] from Kills
++50 [[Precision]]
++40 [[Vitality]]
++10% [[Experience]] from Kills
+-20% Incoming [[Condition Duration]]
++70 [[Vitality]]
++10% [[Experience]] from Kills
++50 [[Power]]
++50 [[Condition Damage]]
+Gain [[Might]] When Using a [[Healing skill|Heal Skill]]
++10% [[Experience]] from Kills
++5% [[Burning]] Duration
++10% [[Experience]] from Kills
+50% Chance to Gain [[Might]] on [[Dodge]]
++10% to [[Endurance]] Regeneration
++10% [[Experience]] from Kills
+80% Chance to Gain [[Might]] on [[Dodge]]
++30% to [[Endurance]] Regeneration
++10% [[Experience]] from Kills
+-10% Incoming [[Damage Reduction|Damage]]
++70 [[Vitality]]
++10% [[Experience]] from Kills
+30% Chance to Gain [[Might]] on [[Dodge]]
++10% [[Experience]] from Kills
+100% Chance to Gain [[Might]] on [[Dodge]]
++40% to [[Endurance]] Regeneration
++10% [[Experience]] from Kills
++100 [[Condition Damage]]
++70 [[Vitality]]
++10% [[Experience]] from Kills
+-16% Incoming [[Stun]] Duration
++10% [[Experience]] from Kills
++80 [[Precision]]
++60 [[Condition Damage]]
++10% [[Experience]] from Kills
+-18% Incoming [[Condition Duration]]
++60 [[Vitality]]
++10% [[Experience]] from Kills
+80% Chance to Remove a [[Condition]] on Using a [[Healing skill|Heal Skill]]
++60 [[Healing Power|Healing]]
++10% [[Experience]] from Kills
+20% Chance to Remove a [[Condition]] on Using a [[Healing skill|Heal Skill]]
++10% [[Experience]] from Kills
+20% Chance to Remove a [[Condition]] on Using a [[Healing skill|Heal Skill]]
++10% [[Experience]] from Kills
++60 [[Precision]]
++50 [[Condition Damage]]
++10% [[Experience]] from Kills
+Gain [[Health]] Every Second
++70 [[Condition Damage]]
++1% All [[Experience]] Gained
+20% Chance to Gain [[Might]] on [[Dodge]]
++10% [[Experience]] from Kills
++100 [[toughness]]
+20% [[magic find]]
++10% [[experience]] from kills
+100% Chance to Remove a [[Condition]] on Using a [[Healing skill|Heal Skill]] (Cooldown: 10 Seconds)
++70 [[Healing Power|Healing]]
++10% [[Experience]] from Kills
+30% Chance to Remove a [[Condition]] on Using a [[Healing skill|Heal Skill]]
++10% [[Experience]] from Kills
++12 [[Power]]
++12 [[Ferocity]]
++10% [[Experience]] from kills
++3% [[Burning]] Duration
++10% [[Experience]] from Kills
+20% Chance to Gain [[Might]] on [[Dodge]]
++10% [[Experience]] from Kills
+-4% Incoming [[Condition Duration]]
++10% [[Experience]] from Kills
++20 [[Precision]]
++10% [[Experience]] from Kills
++80 [[Condition Damage]]
++60 [[Vitality]]
++10% [[Experience]] from Kills
+60% Chance to Gain [[Might]] on [[Dodge]]
++20% to [[Endurance]] Regeneration
++10% [[Burning]] Duration
++50 [[Precision]]
++10% [[Experience]] from Kills
+Lose a [[Condition]] on Successful [[Evade]] (Cooldown: 10 Seconds)
++70 [[Toughness]]
++1% All [[Experience]] Gained
++20 [[Ferocity]]
+Day: 14% Chance to [[Burning|Burn]] on [[Critical hit|Critical Hit]]
+Night: 14% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++10% [[Experience]] from Kills
++12% [[Burning]] Duration
++60 [[Precision]]
++10% [[Experience]] from Kills
++40 [[Ferocity]]
+Day: 18% Chance to [[Burning|Burn]] on [[Critical hit|Critical Hit]]
+Night: 18% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++10% [[Experience]] from Kills
++100 [[Power]]
++70 [[Ferocity]]
++10% [[Experience]] from Kills
++120 [[Condition Damage]] for 30 Seconds on [[Kill effect|Kill]]
++50 [[Precision]]
++10% [[Experience]] from Kills
++30 [[Precision]]
++10% [[Experience]] from Kills
++50 [[Precision]]
++40 [[Ferocity]]
++10% [[Experience]] from Kills
++20 [[Precision]]
++10% [[Experience]] from Kills
++50 [[Precision]]
++40 [[Condition Damage]]
++10% [[Experience]] from Kills
++100 [[vitality]]
+20% [[magic find]]
++10% [[experience]] from kills
++30 [[Ferocity]]
+Day: 12% Chance to [[Burning|Burn]] on [[Critical hit|Critical Hit]]
+Night: 12% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++10% [[Experience]] from Kills
++80 [[Precision]]
++60 [[Vitality]]
++80 [[Precision]]
++60 [[Ferocity]]
+80% Chance to Remove a [[Condition]] Using a [[Healing skill|Heal Skill]]
++60 [[Healing Power|Healing]]
+80% Chance to Gain [[Might]] on [[Dodge]]
++30% [[Endurance]] Regeneration
++80 [[Precision]]
++60 [[Condition Damage]]
+-18% Incoming [[Condition Duration]]
++60 [[Vitality]]
++80 [[Condition Damage]]
++60 [[Vitality]]
++12% [[Burning]] Duration
++60 [[Precision]]
++40 [[Ferocity]]
+Day: 18% Chance to [[Burning|Burn]] on [[Critical hit|Critical Hit]]
+Night: 18% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
+-8% Incoming Damage
++60 [[Power]]
+66% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++45 to [[All Attributes]]
++10% [[Karma]]
++5% All [[Experience]] Gained
++20% [[Magic Find]]
++20% Gold Find
++10% [[World Experience|WXP]] Gained
+-20% Incoming Condition Duration
++45 to All Attributes
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
++10% Outgoing Healing
++45 to All Attributes
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+-10% Incoming Damage
++45 to All Attributes
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+Gain Health Every Second
++45 to All attributes
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+28% Chance to Gain [[Swiftness]] on [[Kill effect|Kill]]
++10% [[Experience]] from Kills
+50% <span id="sic" style="display:inline; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;"><span style="margin: 0em 0.1em; font-size: 85%;">[''[[wikipedia:sic|<span style="cursor: help; border-bottom: 1px dotted silver;" title="Chance">sic</span>]]'']</span></span>[[Category:Text errors]] to Gain [[Swiftness]] on [[Kill effect|Kill]]
++4% Damage While Moving
++10% [[Experience]] from Kills
++50% [[Downed]] Health
++6% Damage while Downed
++10% [[Experience]] from Kills
++30% [[Downed]] Health
++10% [[Experience]] from Kills
+40% Chance to Gain [[Swiftness]] on [[Kill effect|kill]]
++3% Damage While Moving
++10% [[Experience]] from Kills
+60% Chance to Gain [[Might]] on [[Kill effect|Kill]]
++50 [[Ferocity]]
++10% [[Experience]] from Kills
++60% [[Downed]] Health
++10% Damage While Downed
++10% [[Experience]] from Kills
+36% Chance to Gain [[Swiftness]] on [[Kill effect|Kill]]
++2% Damage While Moving
++10% [[Experience]] from Kills
+80% Chance to Gain [[Might]] on [[Kill effect|Kill]]
++60 [[Ferocity]]
++10% [[Experience]] from Kills
++100% [[Downed]] Health
++20% Damage While Downed
++10% [[Experience]] from Kills
++100 [[Expertise]]
++70 [[Condition Damage]]
++10% [[Experience]] from Kills
+30% Chance to Gain [[Might]] on [[Kill effect|Kill]]
++10% [[Experience]] from Kills
+28% Chance to Gain [[Might]] on [[Critical hit|Critical Hit]] during the [[day and night|Day]]
+28% Chance to Inflict [[Chill]] on [[Critical hit|Critical Hit]] during the Night
++10% [[Experience]] from Kills
++80% [[Downed]] Health
++14% Damage While Downed
++10% [[Experience]] from Kills
+-24% Incoming [[Stun]] Duration
++40 [[Toughness]]
++10% [[Experience]] from Kills
+-40% Incoming [[Stun]] Duration
++70 [[Toughness]]
++10% [[Experience]] from Kills
++50 [[Toughness]]
++40 [[Condition Damage]]
++10% [[Experience]] from Kills
++20% [[Downed]] Health
++10% [[Experience]] from Kills
+20% Chance to Gain [[Might]] on [[Kill effect|Kill]]
++10% [[Experience]] from Kills
+50% Chance to Gain [[Might]] on [[Kill effect|Kill]]
++40 [[Ferocity]]
++10% [[Experience]] from Kills
+60% to Gain [[Swiftness]] on [[Kill effect|Kill]]
++5% Damage While Moving
++10% [[Experience]] from Kills
+20% Chance to Gain [[Swiftness]] on [[Kill effect|Kill]]
++10% [[Experience]] from Kills
+-24% Incoming [[Stun]] Duration
++40 [[Toughness]]
++10% [[Experience]] from Kills
+100% Chance to Gain [[Might]] on [[Kill effect|Kill]]
++70 [[Ferocity]]
++10% [[Experience]] from Kills
++20 [[Power]]
++10% [[Experience]] from Kills
+60% to Gain [[Swiftness]] When You Kill a Foe 
++5% [[Damage]] while Moving 
++10% [[Experience]] from Kills 
++30% [[Magic Find]]
++20 [[Vitality]]
++10% [[Experience]] from Kills
+50% Chance to Gain [[Swiftness]] on [[Kill effect|Kill]]
++4% Damage While Moving
+80% Chance to Gain [[Might]] on [[Kill effect|Kill]]
++60 [[Ferocity]]
++80% [[Downed]] Health
++14% Damage While Downed
++80 [[Vitality]]
++60 [[Toughness]]
+26% [[Magic Find]]
++60 [[Condition Damage]]
+36% Chance to Gain [[Might]] on [[Critical hit|Critical Hit]] during the Day
+36% Chance to Inflict [[Chill]] on [[Critical hit|Critical Hit]] during the Night
++160 [[Condition Damage]] for 30 Seconds on [[Kill effect|Kill]]
++60 [[Precision]]
++80 [[Toughness]]
++60 [[Condition Damage]]
+-18% Incoming Damage while [[Stun]]ned, [[Knockdown|Knocked Down]], or [[push|Knocked Back]]
+-14% Incoming [[Condition Duration]]
++200 [[Power]] for 30 Seconds on [[Kill effect|Kill]]
++70 [[Ferocity]]
++10% [[Experience]] from Kills
+-6% Incoming Damage While [[Stun]]ned, [[knockdown|Knocked Down]], or [[push|Knocked Back]]
++10% [[Experience]] from Kills
++200 [[Toughness]] for 10 Seconds on Using a [[Healing skill|Heal Skill]] (Cooldown: 20 seconds)
++70 [[Healing Power]]
++10% [[Experience]] from Kills
+22% [[Magic Find]]
++50 [[Condition Damage]]
++10% [[Experience]] from Kills
+8% Chance to Gain [[Might]] on [[Critical hit|Critical Hit]] during the [[day and night|Day]]
++10% [[Experience]] from Kills
+66% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++100 [[Condition Damage]]
++70 [[Expertise]]
++10% [[Karma]]
++5% All [[Experience]] Gained
++20% [[Magic Find]]
++20% Gold Find
++10% [[World Experience|WXP]] Gained
++20 [[Vitality]]
++10% [[Experience]] from Kills
+10% [[Magic Find]]
++10% [[Experience]] from Kills
+-20% Incoming Condition Duration
++100 [[Expertise]]
++70 [[Condition Damage]]
++10% Karma
++5% All Experience Gained
++20% Magic Find
++20% Gold Find
++10% WXP Gained
+-20% Incoming Condition Duration
++100 [[Concentration]]
++70 [[Expertise]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+-20% Incoming Condition Duration
++100 [[Condition Damage]]
++70 [[Expertise]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+Gain 5 seconds of [[quickness]] on [[dismount]]. (Cooldown: 20 seconds)
++70 [[Precision]]
++10% [[Karma]]
++1% All [[Experience]] Gained
+30% [[Magic Find]]
++70 [[Condition Damage]]
++10% [[Experience]] from Kills
+-8% Incoming [[Stun]] Duration
++10% [[Experience]] from Kills
++100 [[Condition Damage]] for 30 Seconds on [[Kill effect|Kill]]
++40 [[Precision]]
++10% [[Experience]] from Kills
++20 [[Power]]
++10% [[Experience]] from Kills
+26% [[Magic Find]]
++60 [[Condition Damage]]
++10% [[Experience]] from Kills
++10% Outgoing Healing
++100 [[Concentration]]
++70 [[Expertise]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
++120 [[Condition Damage]] for 30 Seconds on [[Kill effect|Kill]]
++50 [[Precision]]
++10% [[Experience]] from Kills
++150 [[Vitality]]
++10% [[Experience]] from Kills
+-10% Incoming [[Damage Reduction|Damage]]
++10% [[Experience]] from Kills
+40% Chance to Gain [[Might]] on [[Critical hit|Critical Hit]] during the [[day and night|Day]]
+40% Chance to Inflict [[Chill]] on [[Critical hit|Critical Hit]] during the Night
++10% [[Experience]] from Kills
++60 [[Power]]
++50 [[Precision]]
++10% [[Experience]] from Kills
++20 [[Condition Damage|condition damage]]
++10% [[Experience]] from Kills
++50 [[Condition Damage]]
++40 [[Precision]]
++10% [[Experience]] from Kills
++20 [[Vitality]]
++10% [[Experience]] from Kills
+50% Chance to Gain [[Might]] on [[Kill effect|Kill]]
++40 [[Ferocity]]
++10% [[Experience]] from Kills
++100 [[Precision]]
++70 [[Healing Power]]
++10% [[Experience]] from Kills
++30 [[Vitality]]
++10% [[Experience]] from Kills
++20 [[Vitality]]
++10% [[Experience]] from Kills
++100 [[Concentration]]
++70 [[Toughness]]
++10% [[Experience]] from Kills
++100 [[Vitality]]
++70 [[Toughness]]
++10% [[Experience]] from Kills
++80 [[Vitality]]
++60 [[Toughness]]
++10% [[Experience]] from Kills
+-14% Incoming Damage while [[Stun]]ned, [[Knockdown|Knocked Down]], or [[Knockback|Knocked Back]]
+-6% Incoming [[Condition Duration]]
++10% [[Experience]] from Kills
+-20% Incoming Damage while [[Stun]]ned, [[Knockdown|Knocked Down]], or [[Knockback|Knocked Back]]
+-20% Incoming [[Condition Duration]]
++10% [[Experience]] from Kills
+-18% Incoming Damage while [[Stun]]ned, [[Knockdown|Knocked Down]], or [[Knockback|Knocked Back]]
+-14% Incoming [[Condition Duration]]
++10% [[Experience]] from Kills
++12 [[vitality]]
++50 [[Vitality]]
++40 [[Toughness]]
++10% [[Experience]] from Kills
++40 [[Condition Damage]] for 30 Seconds on [[Kill effect|Kill]]
++10% [[Experience]] from Kills
+-8% Incoming [[Stun]] Duration
++10% [[Experience]] from Kills
+-40% Incoming [[Stun]] Duration
++70 [[Toughness]]
++10% [[Experience]] from Kills
+4% [[Magic Find]]
++10% [[Experience]] from Kills
++30 [[Toughness]]
++10% [[Experience]] from Kills
++10% Outgoing Healing
++100 [[Expertise]]
++70 [[Condition Damage]]
++10% Karma
++5% All Experience Gained
++20% Magic Find
++20% Gold Find
++10% WXP Gained
++10% Outgoing Healing
++100 [[Condition Damage]]
++70 [[Expertise]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
++100 [[Vitality]]
++70 [[Power]]
++10% [[Experience]] from Kills
+4% [[Magic Find]]
++10% [[Experience]] from Kills
+-10% Incoming Damage
++100 [[Expertise]]
++70 [[Condition Damage]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+-10% Incoming Damage
++100 [[Concentration]]
++70 [[Expertise]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+-10% Incoming Damage
++100 [[Condition Damage]]
++70 [[Expertise]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
++200 [[Condition Damage]] for 30 Seconds on [[Kill effect|Kill]]
++70 [[Precision]]
++10% [[Experience]] from Kills
++150 [[Power]] and [[Condition Damage]] for 30 Seconds on [[Kill effect|Kill]]
++10% [[Experience]] from Kills
++100 [[Concentration]]
++70 [[Expertise]]
++10% [[Experience]] from Kills
++100 [[Power]]
++70 [[Ferocity]]
++1% All [[Experience]] Gained
+May Cause Intermittent Gastric Distress
++100 [[Expertise]]
++70 [[Power]]
++10% [[Experience]] from Kills
+Gain [[Health]] Every Second
++40 [[Vitality]]
++10% [[Experience]] from Kills
++100 [[Expertise]]
++70 [[Condition Damage]]
++1% All [[Experience]] Gained
+36% Chance to Gain [[Might]] on [[critical hit|Critical Hit]] during the [[day and night|Day]]
+36% Chance to Inflict [[Chill]] on [[Critical hit|Critical Hit]] during the Night
++10% [[Experience]] from Kills
+-36% Incoming [[Stun]] Duration
++60 [[Toughness]]
++10% [[Experience]] from Kills
+-28% Incoming [[Stun]] Duration
++50 [[Toughness]]
++10% [[Experience]] from Kills
++100 [[Condition Damage]]
++70 [[Healing Power]]
++10% [[Experience]] from Kills
++200 [[Condition Damage]] for 30 Seconds on [[Kill effect|Kill]]
++70 [[Precision]]
++10% [[Experience]] from Kills
++60 [[Condition Damage]] for 30 Seconds on [[Kill effect|Kill]]
++10% [[Experience]] from Kills
+66% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++100 [[Concentration]]
++70 [[Expertise]]
++10% [[Karma]]
++5% All [[Experience]] Gained
++20% [[Magic Find]]
++20% Gold Find
++10% [[World Experience|WXP]] Gained
+66% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++100 [[Expertise]]
++70 [[Condition Damage]]
++10% [[Karma]]
++5% All [[Experience]] Gained
++20% [[Magic Find]]
++20% Gold Find
++10% [[World Experience|WXP]] Gained
+Gain Health Every Second
++100 [[Concentration]]
++70 [[Expertise]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+Gain Health Every Second
++100 [[Expertise]]
++70 [[Condition Damage]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+Gain Health Every Second
++100 [[Condition Damage]]
++70 [[Expertise]]
++10% Karma
++5% All Experience Gained
++20% Magic Find
++20% Gold Find
++10% WXP Gained
+-6% Incoming Damage While [[Stun]]ned, [[knockdown|Knocked Down]], or [[push|Knocked Back]]
++10% [[Experience]] from Kills
+-6% Incoming Damage While [[Stun]]ned, [[knockdown|Knocked Down]], or [[push|Knocked Back]]
++10% [[Experience]] from Kills
+-10% Incoming Damage While [[Stun]]ned, [[knockdown|Knocked Down]], or [[push|Knocked Back]]
++10% [[Experience]] from Kills
++60 [[Vitality]]
++50 [[Toughness]]
++10% [[Experience]] from Kills
+-16% Incoming Damage while [[Stun]]ned, [[Knockdown|Knocked Down]], or [[Knockback|Knocked Back]]
+-10% Incoming [[Condition Duration]]
++10% [[Experience]] from Kills
++100 [[power]]
++70 [[toughness]]
++10% [[experience]] from kills
++40 [[Power]] for 30 Seconds on [[Kill effect|Kill]]
++10% [[Experience]] from Kills
++160 [[Condition Damage]] for 30 Seconds on [[Kill effect|Kill]]
++60 [[Precision]]
++10% [[Experience]] from Kills
+-3% Incoming [[Condition Duration]]
++80 [[Toughness]]
++60 [[Condition Damage]]
++10% [[Experience]] from Kills
++100 [[Condition Damage]] for 30 Seconds on [[Kill effect|Kill]]
++40 [[Precision]]
++10% [[Experience]] from Kills
++20 [[Power]]
++10% [[Experience]] from Kills
+18% [[Magic Find]]
++40 [[Condition Damage]]
++10% [[Experience]] from Kills
++100 [[Expertise]]
++70 [[Toughness]]
++1% All [[Experience]] Gained
+60% Chance to Gain [[Might]] on [[Kill effect|Kill]]
++50 [[Power]]
++10% [[Experience]] from Kills
+Gain [[Health]] Every Second
++70 [[Toughness]]
++10% [[Experience]] from Kills
+50% Chance to Gain [[Might]] on [[Dodge]]
++10% to [[Endurance]] Regeneration
++10% [[Experience]] from Kills
++100 [[Expertise]]
+33% Chance to [[life stealing|Steal Life]] on [[critical hit|Critical Hit]]
++10% [[Experience]] from Kills
+80% Chance to Gain [[Might]] on [[Kill effect|Kill]]
++60 [[Power]]
++10% [[Experience]] from Kills
+20% Chance to Gain [[Might]] on [[Kill effect|Kill]]
++10% [[Experience]] from Kills
++50 [[Toughness]]
++40 [[Precision]]
++10% [[Experience]] from Kills
+-10% Incoming [[Damage Reduction|Damage]]
++70 Toughness
++10% [[Experience]] from Kills
+100% Chance to Gain [[Might]] on [[Kill effect|Kill]]
++70 [[Power]]
++10% [[Experience]] from Kills
++80 [[Condition Damage]]
++60 [[Precision]]
++10% [[Experience]] from Kills
++60 [[Condition Damage]]
++50 [[Precision]]
++10% [[Experience]] from Kills
++100 [[Concentration]]
++70 [[Toughness]]
++10% [[Experience]] from Kills
++60 [[Toughness]]
++50 [[Precision]]
++10% [[Experience]] from Kills
++100 [[Healing]]
++70 [[Concentration]]
++10% [[Experience]] from Kills
++80 [[Toughness]]
++60 [[Precision]]
++10% [[Experience]] from Kills
++150 [[Precision]]
++10% [[Experience]] from Kills
+20% Chance to Gain [[Might]] on [[Kill effect|Kill]]
++10% [[Experience]] from Kills
++100 [[Expertise]]
++70 [[Power]]
++10% [[Experience]] from Kills
++100 [[Toughness]]
++70 [[Precision]]
++10% [[Experience]] from Kills
++100 [[Condition Damage]]
++70 [[Precision]]
++10% [[Experience]] from Kills
++12% [[Poisoned|Poison]] Duration
++60 [[Precision]]
+80% Chance to Gain [[Might]] on [[Kill effect|Kill]]
++60 [[Power]]
++80 [[Condition Damage]]
++60 [[Precision]]
++80 [[Toughness]]
++60 [[Precision]]
++80 [[Power]]
++60 [[Vitality]]
++80 [[Power]]
++60 [[Precision]]
++160 [[Power]] for 30 Seconds on [[Kill effect|Kill]]
++60 [[Ferocity]]
++80 [[Power]]
++60 [[Condition Damage]]
++80 [[Vitality]]
++160 [[Power]] when Health below 50%
+20% Chance to Gain [[Might]] on [[Kill effect|Kill]]
++10% [[Experience]] from Kills
++20 [[Expertise]]
++10% [[Experience]] from Kills
++3% [[Poisoned|Poison]] Duration
++10% [[Experience]] from Kills
++80 [[Power]] for 30 Seconds on Kill
++50 [[Precision]]
++50 [[Condition Damage]]
++30% [[Magic Find]]
++10% [[Experience]] from Kills
+66% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++100 [[Power]]
++70 [[Ferocity]]
++10% [[Karma]]
++5% All [[Experience]] Gained
++20% [[Magic Find]]
++20% Gold Find
++10% [[World Experience|WXP]] Gained
++7% [[Poisoned|Poison]] Duration
++40 [[Precision]]
++10% [[Experience]] from Kills
++50 [[Vitality]]
++80 [[Power]] When Health below 50%
++10% [[Experience]] from Kills
+4% [[Magic Find]]
++10% [[Experience]] from Kills
++15% [[Poisoned|Poison]] Duration
++70 [[Precision]]
++10% [[Experience]] from Kills
++60 [[Expertise]]
++50 [[Condition Damage]]
++10% [[Experience]] from Kills
++50 [[Power]]
++40 [[Vitality]]
++10% [[Experience]] from Kills
++50 [[Power]]
++40 [[Precision]]
++10% [[Experience]] from Kills
++150 [[Vitality]]
++10% [[Experience]] from Kills
+-10% Incoming [[Damage Reduction|Damage]]
++70 [[Power]]
++10% [[Experience]] from Kills
++20 [[Vitality]]
++10% [[Experience]] from Kills
++20 [[Power]]
++10% [[Experience]] from Kills
++3% [[Poisoned|Poison]] Duration
++10% [[Experience]] from Kills
++10% [[Poisoned|Poison]] Duration
++50 [[Precision]]
++10% [[Experience]] from Kills
++200 [[Power]] for 10 Seconds on Using a [[Healing skill|Heal Skill]] (Cooldown: 20 seconds)
++70 [[Precision]]
++10% [[Experience]] from Kills
++150 [[Power]] and [[Vitality]] for 30 Seconds on [[Kill effect|Kill]]
++10% [[Experience]] from Kills
+Gain [[Health]] Every Second
++10% [[Experience]] from Kills
++30 [[Toughness]]
++10% [[Experience]] from Kills
++60 [[Precision]]
++50 [[Ferocity]]
++10% [[Experience]] from Kills
+-20% Incoming Condition Duration
++100 [[Power]]
++70 [[Ferocity]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
++50 [[Expertise]]
++40 [[Condition Damage]]
++10% [[Experience]] from Kills
+-10% Incoming [[Damage Reduction|Damage]]
++70 [[Expertise]]
++10% [[Experience]] from Kills
+-10% Incoming [[Damage Reduction|Damage]]
++70 [[Precision]]
++10% [[Experience]] from Kills
+-10% Incoming [[Damage Reduction|Damage]]
++70 Healing Power
++10% [[Experience]] from Kills
+-10% Incoming [[Damage Reduction|Damage]]
++70 [[Condition Damage]]
++10% [[Experience]] from Kills
+-10% Incoming [[Damage Reduction|Damage]]
++70 [[Ferocity]]
++10% [[Experience]] from Kills
++30 [[Power]]
++10% [[Experience]] from Kills
++60 [[Power]] for 30 Seconds on [[Kill effect|Kill]]
++10% [[Experience]] from Kills
+-10% Incoming Damage
++100 [[Power]]
++70 [[Ferocity]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
++10% Outgoing Healing
++100 [[Concentration]]
++70 [[Power]]
++10% Karma
++5% All Experience Gained
++20% Magic Find
++20% Gold Find
++10% WXP Gained
+66% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++100 [[Concentration]]
++70 [[Power]]
++10% [[Karma]]
++5% All [[Experience]] Gained
++20% [[Magic Find]]
++20% Gold Find
++10% [[World Experience|WXP]] Gained
++100 [[Condition Damage]]
++70 [[Expertise]]
++10% [[Experience]] from Kills
++60 [[Power]]
++50 [[Condition Damage]]
++10% [[Experience]] from Kills
++60 [[Vitality]]
++120 [[Power]] When Health below 50%
++10% [[Experience]] from Kills
+66% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++100 [[Vitality]]
++70 [[Toughness]]
++10% [[Karma]]
++5% All [[Experience]] Gained
++20% [[Magic Find]]
++20% Gold Find
++10% [[World Experience|WXP]] Gained
++10% Outgoing Healing
++100 [[Vitality]]
++70 [[Toughness]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+Gain Health Every Second
++100 [[Vitality]]
++70 [[Toughness]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+-20% Incoming Condition Duration
++100 [[Concentration]]
++70 [[Power]]
++10% Karma
++5% All Experience Gained
++20% Magic Find
++20% Gold Find
++10% WXP Gained
+-20% Incoming Condition Duration
++100 [[Vitality]]
++70 [[Toughness]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+-20% Incoming Condition Duration
++100 [[Power]]
++70 [[Precision]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+-20% Incoming Condition Duration
++100 [[Concentration]]
++70 [[Toughness]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
++10% Outgoing Healing
++100 [[Power]]
++70 [[Precision]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+66% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++100 [[Power]]
++70 [[Precision]]
++10% [[Karma]]
++5% All [[Experience]] Gained
++20% [[Magic Find]]
++20% Gold Find
++10% [[World Experience|WXP]] Gained
++60 [[Power]]
++50 [[Precision]]
++10% [[Experience]] from Kills
++120 [[Power]] for 30 Seconds on [[Kill effect|Kill]]
++50 [[Ferocity]]
++10% [[Experience]] from Kills
++100 [[Power]]
++70 [[Condition Damage]]
++10% [[Experience]] from Kills
++100 [[Toughness]]
++70 [[Precision]]
++10% [[Experience]] from Kills
++150 [[Power]]
++10% [[Experience]] from Kills
++100 [[Vitality]]
++200 [[Power]] when Health below 50%
++10% [[Experience]] from Kills
+100% Chance to Gain [[Might]] on [[Kill effect|Kill]]
++70 [[Power]]
++10% [[Experience]] from Kills
+-10% Incoming [[Damage Reduction|Damage]]
++70 [[Concentration]]
++10% [[Experience]] from Kills
++100 [[Power]]
++70 [[Vitality]]
++10% [[Experience]] from Kills
++20 [[Toughness]]
++10% [[Experience]] from Kills
+-10% Incoming Damage
++100 [[Concentration]]
++70 [[Power]]
++10% Karma
++5% All Experience Gained
++20% Magic Find
++20% Gold Find
++10% WXP Gained
+-10% Incoming Damage
++100 [[Power]]
++70 [[Precision]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+-10% Incoming Damage
++100 [[Concentration]]
++70 [[Toughness]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+-10% Incoming Damage
++100 [[Vitality]]
++70 [[Toughness]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
++10% Outgoing Healing
++100 [[Concentration]]
++70 [[Toughness]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+66% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++100 [[Concentration]]
++70 [[Toughness]]
++10% [[Karma]]
++5% All [[Experience]] Gained
++20% [[Magic Find]]
++20% Gold Find
++10% [[World Experience|WXP]] Gained
++80 [[Power]]
++60 [[Vitality]]
++10% [[Experience]] from Kills
++60 [[Power]]
++50 [[Vitality]]
++10% [[Experience]] from Kills
++100 [[Ferocity]]
+33% Chance to Gain [[Might]] on [[critical hit|Critical Hit]]
++10% [[Experience]] from Kills
+Gain Health Every Second
++100 [[Concentration]]
++70 [[Toughness]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+Gain Health Every Second
++100 [[Power]]
++70 [[Precision]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+Gain Health Every Second
++100 [[Concentration]]
++70 [[Power]]
++10% Karma
++5% All Experience Gained
++20% Magic Find
++20% Gold Find
++10% WXP Gained
++100 [[toughness]]
++70 [[power]]
++10 [[experience]] from kills
++80 [[Power]]
++60 [[Precision]]
++10% [[Experience]] from Kills
++160 [[Power]] for 30 Seconds on [[Kill effect|Kill]]
++60 [[Ferocity]]
++10% [[Experience]] from Kills
+25% Chance on [[Critical hit|Critical Hit]] to Inflict [[Chill]] for 1 Second, [[Burning]] for 2 Seconds, and [[Poisoned|Poison]] for 3 Seconds(Cooldown: 20 Seconds)
++70 [[Condition Damage|Condition damage]]
++1% All [[Experience]] Gained
+100% Chance to Gain [[Fury]] on [[Kill effect|Kill]]
++70 [[Ferocity]]
++10% [[Experience]] from Kills
++100 [[Power]] 
++70 [[Precision]]
++10% [[Experience]] from Kills
++200 [[Power]] for 30 Seconds on [[Kill effect|Kill]]
++70 [[Ferocity]]
++10% [[Experience]] from Kills
++20 [[Vitality]]
++10% [[Experience]] from Kills
++100 [[Expertise]]
++70 [[Condition Damage]]
++10% [[Experience]] from Kills
++20 [[Power]]
++10% [[Experience]] from Kills
++30 [[Vitality]]
++10% [[Experience]] from Kills
++100 [[Power]] for 30 Seconds on [[Kill effect|Kill]]
++40 [[Ferocity]]
++10% [[Experience]] from kills
++10% Outgoing Healing
++100 [[Power]]
++70 [[Ferocity]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+Gain Health Every Second
++100 [[Power]]
++70 [[Ferocity]]
++10% Karma
++5% All Experience Gained
++20% Magic Find
++20% Gold Find
++10% WXP Gained
++80 [[Power]]
++60 [[Condition Damage]]
++10% [[Experience]] from Kills
++12% [[Poisoned|Poison]] Duration
++60 [[Precision]]
++10% [[Experience]] from Kills
++20 [[Power]]
++10% [[Experience]] from Kills
++50 [[Power]]
++40 [[Condition Damage]]
++10% [[Experience]] from Kills
++5% [[Poisoned|Poison]] Duration
++10% [[Experience]] from Kills
++100 [[Power]] 
++70 [[Precision]] 
++30% [[Magic Find]] 
++10% [[Experience]] from Kills
+16% Chance to Gain [[Might]] on [[critical hit|Critical Hit]] During the [[day and night|Day]]
++10% [[Experience]] from Kills
+24% Chance to Gain [[Might]] on [[critical hit|Critical Hit]] during the [[day and night|Day]]
+24% Chance to Inflict [[Chill]] on Critical Hit during the Night
++10% [[Experience]] from Kills
++80 [[Expertise]]
++60 [[Condition Damage]]
++10% [[Experience]] from Kills
++80 [[Vitality]]
++160 [[Power]] while Health Is Below 50%
++10% [[Experience]] from Kills
+-16% Incoming [[Stun]] Duration
++10% [[Experience]] from Kills
++30 [[Condition]] Damage
++10% [[Experience]] from Kills
++40 [[Expertise]]
++10% [[Experience]] from Kills
+66% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++100 [[Healing Power]]
++70 [[Concentration]]
++10% [[Karma]]
++5% All [[Experience]] Gained
++20% [[Magic Find]]
++20% Gold Find
++10% [[World Experience|WXP]] Gained
++10% Outgoing Healing
++100 [[Healing Power]]
++70 [[Concentration]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+-20% Incoming Condition Duration
++100 [[Healing Power]]
++70 [[Concentration]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+Gain Health Every Second
++100 [[Healing Power]]
++70 [[Concentration]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+-10% Incoming Damage
++100 [[Healing Power]]
++70 [[Concentration]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+66% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++100 [[Condition Damage]]
++70 [[Expertise]]
++10% [[Karma]]
++5% All [[Experience]] Gained
++20% [[Magic Find]]
++20% Gold Find
++10% [[World Experience|WXP]] Gained
+66% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++100 [[Power]]
++70 [[Ferocity]]
++10% [[Karma]]
++5% All [[Experience]] Gained
++20% [[Magic Find]]
++20% Gold Find
++10% [[World Experience|WXP]] Gained
+-20% Incoming Condition Duration
++100 [[Expertise]]
++70 [[Condition Damage]]
++10% Karma
++5% All Experience Gained
++20% Magic Find
++20% Gold Find
++10% WXP Gained
+-20% Incoming Condition Duration
++100 [[Concentration]]
++70 [[Healing Power]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+-20% Incoming Condition Duration
++100 [[Concentration]]
++70 [[Expertise]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+-20% Incoming Condition Duration
++100 [[Condition Damage]]
++70 [[Expertise]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
++10% Outgoing Healing
++100 [[Concentration]]
++70 [[Expertise]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+28% Chance to Gain [[Swiftness]] on [[Kill effect|Kill]]
++10% [[Experience]] from Kills
+50% <span id="sic" style="display:inline; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;"><span style="margin: 0em 0.1em; font-size: 85%;">[''[[wikipedia:sic|<span style="cursor: help; border-bottom: 1px dotted silver;" title="Chance">sic</span>]]'']</span></span>[[Category:Text errors]] to Gain [[Swiftness]] on [[Kill effect|Kill]]
++4% Damage While Moving
++10% [[Experience]] from Kills
++50% [[Downed]] Health
++6% Damage while Downed
++10% [[Experience]] from Kills
+60% Chance to Gain [[Might]] on [[Kill effect|Kill]]
++50 [[Power]]
++10% [[Experience]] from Kills
++30% [[Downed]] Health
++10% [[Experience]] from Kills
+Gain [[Health]] Every Second
++70 [[Toughness]]
++10% [[Experience]] from Kills
+40% Chance to Gain [[Swiftness]] on [[Kill effect|kill]]
++3% Damage While Moving
++10% [[Experience]] from Kills
+50% Chance to Gain [[Might]] on [[Dodge]]
++10% to [[Endurance]] Regeneration
++10% [[Experience]] from Kills
++100 [[Expertise]]
+33% Chance to [[life stealing|Steal Life]] on [[critical hit|Critical Hit]]
++10% [[Experience]] from Kills
++100 [[Concentration]]
++70 [[Expertise]]
++1% All [[Experience]] Gained
+60% Chance to Gain [[Might]] on [[Kill effect|Kill]]
++50 [[Ferocity]]
++10% [[Experience]] from Kills
+22% [[Magic Find]]
++50 [[Condition Damage]]
++10% [[Experience]] from Kills
++60% [[Downed]] Health
++10% Damage While Downed
++10% [[Experience]] from Kills
++60 [[Power]]
++50 [[Condition Damage]]
++10% [[Experience]] from Kills
++60 [[Vitality]]
++120 [[Power]] When Health below 50%
++10% [[Experience]] from Kills
+10% [[Magic Find]]
++10% [[Experience]] from Kills
+36% Chance to Gain [[Swiftness]] on [[Kill effect|Kill]]
++2% Damage While Moving
++10% [[Experience]] from Kills
++60 [[Power]]
++50 [[Precision]]
++10% [[Experience]] from Kills
++120 [[Power]] for 30 Seconds on [[Kill effect|Kill]]
++50 [[Ferocity]]
++10% [[Experience]] from Kills
++7% [[Poisoned|Poison]] Duration
++40 [[Precision]]
++10% [[Experience]] from Kills
++50 [[Toughness]]
++40 [[Precision]]
++10% [[Experience]] from Kills
++100 [[Condition Damage]] for 30 Seconds on [[Kill effect|Kill]]
++40 [[Precision]]
++10% [[Experience]] from Kills
+26% [[Magic Find]]
++60 [[Condition Damage]]
++10% [[Experience]] from Kills
+80% Chance to Gain [[Might]] on [[Kill effect|Kill]]
++60 [[Ferocity]]
++10% [[Experience]] from Kills
+80% Chance to Gain [[Might]] on [[Kill effect|Kill]]
++60 [[Power]]
++10% [[Experience]] from Kills
++120 [[Condition Damage]] for 30 Seconds on [[Kill effect|Kill]]
++50 [[Precision]]
++10% [[Experience]] from Kills
++15% [[Poisoned|Poison]] Duration
++70 [[Precision]]
++10% [[Experience]] from Kills
++60 [[Expertise]]
++50 [[Condition Damage]]
++10% [[Experience]] from Kills
++100 [[Power]]
++70 [[Condition Damage]]
++10% [[Experience]] from Kills
++100% [[Downed]] Health
++20% Damage While Downed
++10% [[Experience]] from Kills
+30% Chance to Gain [[Might]] on [[Kill effect|Kill]]
++10% [[Experience]] from Kills
+40% Chance to Gain [[Might]] on [[Critical hit|Critical Hit]] during the [[day and night|Day]]
+40% Chance to Inflict [[Chill]] on [[Critical hit|Critical Hit]] during the Night
++10% [[Experience]] from Kills
++50 [[Condition Damage]]
++40 [[Precision]]
++10% [[Experience]] from Kills
+28% Chance to Gain [[Might]] on [[Critical hit|Critical Hit]] during the [[day and night|Day]]
+28% Chance to Inflict [[Chill]] on [[Critical hit|Critical Hit]] during the Night
++10% [[Experience]] from Kills
++100 [[Vitality]]
++200 [[Power]] when Health below 50%
++10% [[Experience]] from Kills
+30% [[Magic Find]]
++70 [[Condition Damage]]
++10% [[Experience]] from Kills
+100% Chance to Gain [[Might]] on [[Kill effect|Kill]]
++70 [[Power]]
++10% [[Experience]] from Kills
++80% [[Downed]] Health
++14% Damage While Downed
++10% [[Experience]] from Kills
++30 [[Toughness]]
++10% [[Experience]] from Kills
++50 [[Expertise]]
++40 [[Condition Damage]]
++10% [[Experience]] from Kills
++100 [[Concentration]]
++70 [[Toughness]]
++10% [[Experience]] from Kills
++100 [[Power]]
++70 [[Vitality]]
++10% [[Experience]] from Kills
++60 [[Power]] for 30 Seconds on [[Kill effect|Kill]]
++10% [[Experience]] from Kills
++30 [[Power]]
++10% [[Experience]] from Kills
++60 [[Toughness]]
++50 [[Precision]]
++10% [[Experience]] from Kills
++80 [[Toughness]]
++60 [[Precision]]
++10% [[Experience]] from Kills
++100 [[Expertise]]
++70 [[Condition Damage]]
++10% [[Experience]] from Kills
++80 [[Power]]
++60 [[Vitality]]
++10% [[Experience]] from Kills
++60 [[Power]]
++50 [[Vitality]]
++10% [[Experience]] from Kills
+36% Chance to Gain [[Might]] on [[critical hit|Critical Hit]] during the [[day and night|Day]]
+36% Chance to Inflict [[Chill]] on [[Critical hit|Critical Hit]] during the Night
++10% [[Experience]] from Kills
++100 [[Ferocity]]
+33% Chance to Gain [[Might]] on [[critical hit|Critical Hit]]
++10% [[Experience]] from Kills
+-40% Incoming [[Stun]] Duration
++70 [[Toughness]]
++10% [[Experience]] from Kills
+-36% Incoming [[Stun]] Duration
++60 [[Toughness]]
++10% [[Experience]] from Kills
+-28% Incoming [[Stun]] Duration
++50 [[Toughness]]
++10% [[Experience]] from Kills
++50 [[Power]]
++40 [[Vitality]]
++10% [[Experience]] from Kills
++200 [[Condition Damage]] for 30 Seconds on [[Kill effect|Kill]]
++70 [[Precision]]
++10% [[Experience]] from Kills
++60 [[Condition Damage]] for 30 Seconds on [[Kill effect|Kill]]
++10% [[Experience]] from Kills
++30 [[Vitality]]
++10% [[Experience]] from Kills
+60% to Gain [[Swiftness]] on [[Kill effect|Kill]]
++5% Damage While Moving
++10% [[Experience]] from Kills
++50 [[Power]]
++40 [[Precision]]
++10% [[Experience]] from Kills
++100 [[Power]] for 30 Seconds on [[Kill effect|Kill]]
++40 [[Ferocity]]
++10% [[Experience]] from kills
+-24% Incoming [[Stun]] Duration
++40 [[Toughness]]
++10% [[Experience]] from Kills
++80 [[Power]]
++60 [[Condition Damage]]
++10% [[Experience]] from Kills
++12% [[Poisoned|Poison]] Duration
++60 [[Precision]]
++10% [[Experience]] from Kills
++50 [[Power]]
++40 [[Condition Damage]]
++10% [[Experience]] from Kills
++160 [[Condition Damage]] for 30 Seconds on [[Kill effect|Kill]]
++60 [[Precision]]
++10% [[Experience]] from Kills
++5% [[Poisoned|Poison]] Duration
++10% [[Experience]] from Kills
++80 [[Power]]
++60 [[Precision]]
++10% [[Experience]] from Kills
++160 [[Power]] for 30 Seconds on [[Kill effect|Kill]]
++60 [[Ferocity]]
++10% [[Experience]] from Kills
+16% Chance to Gain [[Might]] on [[critical hit|Critical Hit]] During the [[day and night|Day]]
++10% [[Experience]] from Kills
+24% Chance to Gain [[Might]] on [[critical hit|Critical Hit]] during the [[day and night|Day]]
+24% Chance to Inflict [[Chill]] on Critical Hit during the Night
++10% [[Experience]] from Kills
++80 [[Expertise]]
++60 [[Condition Damage]]
++10% [[Experience]] from Kills
++80 [[Vitality]]
++160 [[Power]] while Health Is Below 50%
++10% [[Experience]] from Kills
++100 [[Toughness]]
++70 [[Precision]]
++10% [[Experience]] from Kills
+100% Chance to Gain [[Might]] on [[Kill effect|Kill]]
++70 [[Ferocity]]
++10% [[Experience]] from Kills
++100 [[Power]] 
++70 [[Precision]]
++10% [[Experience]] from Kills
++200 [[Power]] for 30 Seconds on [[Kill effect|Kill]]
++70 [[Ferocity]]
++10% [[Experience]] from Kills
+-16% Incoming [[Stun]] Duration
++10% [[Experience]] from Kills
++30 [[Condition]] Damage
++10% [[Experience]] from Kills
++40 [[Expertise]]
++10% [[Experience]] from Kills
+18% [[Magic Find]]
++40 [[Condition Damage]]
++10% [[Experience]] from Kills
++5% [[Chill]] Duration
++10% [[Experience]] from Kills
++7% [[Chill]] Duration
++40 [[Power]]
++10% [[Experience]] from Kills
++15% [[Chill]] Duration
++70 [[Power]]
++10% [[Experience]] from Kills
++12% [[Chill]] Duration
++60 [[Power]]
++10% [[Experience]] from Kills
++10% [[Chill]] Duration
++50 [[Power]]
++10% [[Experience]] from Kills
+66% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++100 [[Concentration]]
++70 [[Healing Power]]
++10% [[Karma]]
++5% All [[Experience]] Gained
++20% [[Magic Find]]
++20% Gold Find
++10% [[World Experience|WXP]] Gained
++10% Outgoing Healing
++100 [[Expertise]]
++70 [[Condition Damage]]
++10% Karma
++5% All Experience Gained
++20% Magic Find
++20% Gold Find
++10% WXP Gained
++10% Outgoing Healing
++100 [[Concentration]]
++70 [[Healing Power]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
++10% Outgoing Healing
++100 [[Concentration]]
++33% Chance to Gain [[Might]] on Critical Hit
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
++10% Outgoing Healing
++100 [[Condition Damage]]
++70 [[Expertise]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+-20% Incoming Condition Duration
++100 [[Power]]
++70 [[Ferocity]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+-20% Incoming Condition Duration
++100 [[Concentration]]
++33% Chance to Gain [[Might]] on Critical Hit
++10% Karma
++5% All Experience Gained
++20% Magic Find
++20% Gold Find
++10% WXP Gained
+-10% Incoming Damage
++100 [[Expertise]]
++70 [[Condition Damage]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+-10% Incoming Damage
++100 [[Power]]
++70 [[Ferocity]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+-10% Incoming Damage
++100 [[Concentration]]
++70 [[Expertise]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+-10% Incoming Damage
++100 [[Condition Damage]]
++70 [[Expertise]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
++10% Outgoing Healing
++100 [[Concentration]]
++70 [[Power]]
++10% Karma
++5% All Experience Gained
++20% Magic Find
++20% Gold Find
++10% WXP Gained
+66% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++100 [[Concentration]]
++70 [[Power]]
++10% [[Karma]]
++5% All [[Experience]] Gained
++20% [[Magic Find]]
++20% Gold Find
++10% [[World Experience|WXP]] Gained
+66% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++100 [[Vitality]]
++70 [[Toughness]]
++10% [[Karma]]
++5% All [[Experience]] Gained
++20% [[Magic Find]]
++20% Gold Find
++10% [[World Experience|WXP]] Gained
++10% Outgoing Healing
++100 [[Vitality]]
++70 [[Toughness]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+Gain Health Every Second
++100 [[Vitality]]
++70 [[Toughness]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+-20% Incoming Condition Duration
++100 [[Concentration]]
++70 [[Power]]
++10% Karma
++5% All Experience Gained
++20% Magic Find
++20% Gold Find
++10% WXP Gained
+-20% Incoming Condition Duration
++100 [[Vitality]]
++70 [[Toughness]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+-20% Incoming Condition Duration
++100 [[Power]]
++70 [[Precision]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+-20% Incoming Condition Duration
++100 [[Concentration]]
++70 [[Toughness]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
++10% Outgoing Healing
++100 [[Power]]
++70 [[Precision]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+66% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++100 [[Power]]
++70 [[Precision]]
++10% [[Karma]]
++5% All [[Experience]] Gained
++20% [[Magic Find]]
++20% Gold Find
++10% [[World Experience|WXP]] Gained
+-10% Incoming Damage
++100 [[Concentration]]
++70 [[Power]]
++10% Karma
++5% All Experience Gained
++20% Magic Find
++20% Gold Find
++10% WXP Gained
+-10% Incoming Damage
++100 [[Power]]
++70 [[Precision]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+-10% Incoming Damage
++100 [[Concentration]]
++70 [[Toughness]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+-10% Incoming Damage
++100 [[Vitality]]
++70 [[Toughness]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
++10% Outgoing Healing
++100 [[Concentration]]
++70 [[Toughness]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+66% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++100 [[Concentration]]
++70 [[Toughness]]
++10% [[Karma]]
++5% All [[Experience]] Gained
++20% [[Magic Find]]
++20% Gold Find
++10% [[World Experience|WXP]] Gained
+Gain Health Every Second
++100 [[Concentration]]
++70 [[Toughness]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+Gain Health Every Second
++100 [[Power]]
++70 [[Precision]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+Gain Health Every Second
++100 [[Concentration]]
++70 [[Power]]
++10% Karma
++5% All Experience Gained
++20% Magic Find
++20% Gold Find
++10% WXP Gained
++80 [[Precision]]
++60 [[Vitality]]
++10% [[Experience]] from Kills
++30 [[Precision]]
++10% [[Experience]] from Kills
++80 [[Precision]]
++60 [[Ferocity]]
++10% [[Experience]] from Kills
++60 [[Precision]]
++50 [[Ferocity]]
++10% [[Experience]] from Kills
+-16% Incoming [[Condition Duration]]
++50 [[Vitality]]
++10% [[Experience]] from Kills
++60 [[Precision]]
++50 [[Vitality]]
++10% [[Experience]] from Kills
+-8% Incoming [[Condition Duration]]
+10% [[Experience]] from Kills
++50 [[Condition Damage]]
++40 [[Vitality]]
++10% [[Experience]] from Kills
++100 [[Precision]]
++70 [[Ferocity]]
++10% [[Experience]] from Kills
++100 [[Precision]]
++70 [[Vitality]]
++10% [[Experience]] from Kills
+-12% Incoming [[Condition Duration]]
++40 [[Vitality]]
++10% [[Experience]] from Kills
++20 [[Ferocity]]
+Day: 8% Chance to [[Burning|Burn]] on [[Critical hit|Critical Hit]]
+Night: 8% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++10% [[Experience]] from Kills
++60 [[Condition Damage]]
++50 [[Vitality]]
++10% [[Experience]] from Kills
++100 [[Precision]]
++70 [[Condition Damage]]
++10% [[Experience]] from Kills
++15% [[Burning]] Duration
++70 [[Precision]]
++10% [[Experience]] from Kills
++50 [[Ferocity]]
+Day: 20% Chance to [[Burning|Burn]] on [[Critical hit|Critical Hit]]
+Night: 20% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++10% [[Experience]] from Kills
+60% Chance to Remove a [[Condition]] on Using a [[Healing skill|Heal Skill]]
++50 [[Healing Power|Healing]]
++10% [[Experience]] from Kills
+30% Chance to Gain [[Might]] on [[Dodge]]
++10% [[Experience]] from Kills
+50% Chance to Remove a [[Condition]] on Using a [[Healing skill|Heal Skill]]
++40 [[Healing Power|Healing]]
++10% [[Experience]] from Kills
++50 [[Precision]]
++40 [[Vitality]]
++10% [[Experience]] from Kills
+-20% Incoming [[Condition Duration]]
++70 [[Vitality]]
++10% [[Experience]] from Kills
++5% [[Burning]] Duration
++10% [[Experience]] from Kills
+50% Chance to Gain [[Might]] on [[Dodge]]
++10% to [[Endurance]] Regeneration
++10% [[Experience]] from Kills
+80% Chance to Gain [[Might]] on [[Dodge]]
++30% to [[Endurance]] Regeneration
++10% [[Experience]] from Kills
++80 [[Condition Damage]]
++60 [[Precision]]
++10% [[Experience]] from Kills
++60 [[Condition Damage]]
++50 [[Precision]]
++10% [[Experience]] from Kills
+100% Chance to Gain [[Might]] on [[Dodge]]
++40% to [[Endurance]] Regeneration
++10% [[Experience]] from Kills
++100 [[Condition Damage]]
++70 [[Vitality]]
++10% [[Experience]] from Kills
++80 [[Precision]]
++60 [[Condition Damage]]
++10% [[Experience]] from Kills
+-18% Incoming [[Condition Duration]]
++60 [[Vitality]]
++10% [[Experience]] from Kills
+80% Chance to Remove a [[Condition]] on Using a [[Healing skill|Heal Skill]]
++60 [[Healing Power|Healing]]
++10% [[Experience]] from Kills
++60 [[Precision]]
++50 [[Condition Damage]]
++10% [[Experience]] from Kills
+100% Chance to Remove a [[Condition]] on Using a [[Healing skill|Heal Skill]] (Cooldown: 10 Seconds)
++70 [[Healing Power|Healing]]
++10% [[Experience]] from Kills
+30% Chance to Remove a [[Condition]] on Using a [[Healing skill|Heal Skill]]
++10% [[Experience]] from Kills
++80 [[Condition Damage]]
++60 [[Vitality]]
++10% [[Experience]] from Kills
+60% Chance to Gain [[Might]] on [[Dodge]]
++20% to [[Endurance]] Regeneration
++10% [[Burning]] Duration
++50 [[Precision]]
++10% [[Experience]] from Kills
++20 [[Ferocity]]
+Day: 14% Chance to [[Burning|Burn]] on [[Critical hit|Critical Hit]]
+Night: 14% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++10% [[Experience]] from Kills
++12% [[Burning]] Duration
++60 [[Precision]]
++10% [[Experience]] from Kills
++40 [[Ferocity]]
+Day: 18% Chance to [[Burning|Burn]] on [[Critical hit|Critical Hit]]
+Night: 18% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++10% [[Experience]] from Kills
++100 [[Expertise]]
++70 [[Power]]
++10% [[Experience]] from Kills
++50 [[Precision]]
++40 [[Ferocity]]
++10% [[Experience]] from Kills
++100 [[Condition Damage]]
++70 [[Precision]]
++10% [[Experience]] from Kills
++50 [[Precision]]
++40 [[Condition Damage]]
++10% [[Experience]] from Kills
++30 [[Ferocity]]
+Day: 12% Chance to [[Burning|Burn]] on [[Critical hit|Critical Hit]]
+Night: 12% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++10% [[Experience]] from Kills
+-15% Incoming [[Condition Duration]]
++45 All [[Attributes]]
++1% All [[Experience]] Gained
+66% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++100 [[Concentration]]
++70 [[Expertise]]
++10% [[Karma]]
++5% All [[Experience]] Gained
++20% [[Magic Find]]
++20% Gold Find
++10% [[World Experience|WXP]] Gained
+66% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++100 [[Expertise]]
++70 [[Condition Damage]]
++10% [[Karma]]
++5% All [[Experience]] Gained
++20% [[Magic Find]]
++20% Gold Find
++10% [[World Experience|WXP]] Gained
+Gain Health Every Second
++100 [[Concentration]]
++33% Chance to Gain [[Might]] on Critical Hit
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+Gain Health Every Second
++100 [[Concentration]]
++70 [[Healing Power]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+Gain Health Every Second
++100 [[Concentration]]
++70 [[Expertise]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+Gain Health Every Second
++100 [[Expertise]]
++70 [[Condition Damage]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+Gain Health Every Second
++100 [[Condition Damage]]
++70 [[Expertise]]
++10% Karma
++5% All Experience Gained
++20% Magic Find
++20% Gold Find
++10% WXP Gained
++10% Outgoing Healing
++100 [[Power]]
++70 [[Ferocity]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+Gain Health Every Second
++100 [[Power]]
++70 [[Ferocity]]
++10% Karma
++5% All Experience Gained
++20% Magic Find
++20% Gold Find
++10% WXP Gained
+66% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++45 to [[All Attributes]]
++10% [[Karma]]
++5% All [[Experience]] Gained
++20% [[Magic Find]]
++20% Gold Find
++10% [[World Experience|WXP]] Gained
+-20% Incoming Condition Duration
++45 to All Attributes
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
++10% Outgoing Healing
++45 to All Attributes
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+-10% Incoming Damage
++45 to All Attributes
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+Gain Health Every Second
++45 to All attributes
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+-10% Incoming Damage
++100 [[Concentration]]
++70 [[Healing Power]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+-10% Incoming Damage
++100 [[Concentration]]
++33% Chance to Gain [[Might]] on Critical Hit
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+66% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++100 [[Concentration]]
++33% Chance to Gain [[Might]] on [[Critical hit|Critical Hit]]
++10% [[Karma]]
++5% All [[Experience]] Gained
++20% [[Magic Find]]
++20% Gold Find
++10% [[World Experience|WXP]] Gained
+Gain 60 [[Precision]] When Health above 90%
++10% [[Experience]] from Kills
+Gain 40 [[Precision]] When Health above 90%
++10% [[Experience]] from Kills
+Gain 40 [[Condition Damage]] When Health above 90%
++10% [[Experience]] from Kills
+10% [[Movement speed]].
++10% [[Experience]] from kills
+Gain 120 [[Precision]] When Health above 90%
++10% [[Experience]] from Kills
+Gain 120 [[Condition Damage]] When Health above 90%
++10% [[Experience]] from Kills
+Gain 120 [[Power]] When Health above 90%
++10% [[Experience]] from Kills
+Gain 160 [[Precision]] When Health above 90%
++10% [[Experience]] from Kills
+Gain 160 [[Condition Damage]] When Health above 90%
++10% [[Experience]] from Kills
+Gain 160 [[Power]] When Health above 90%
++10% [[Experience]] from Kills
+Gain 60 [[Condition Damage]] When Health above 90%
++10% [[Experience]] from Kills
+Gain 200 [[Precision]] When Health above 90%
++10% [[Experience]] from Kills
+Gain 200 [[Condition Damage]] When Health Is above 90%
++10% [[Experience]] from Kills
+Gain 200 [[Power]] When Health above 90%
++10% [[Experience]] from Kills
+15% [[Movement speed]].
++10% [[Experience]] from kills
+Gain 60 [[Power]] When Health above 90%
++10% [[Experience]] from Kills
+Gain 100 [[Precision]] When Health above 90%
++10% [[Experience]] from Kills
+Gain 100 [[Condition Damage]] When Health above 90%
++10% [[Experience]] from Kills
+25% [[Movement speed|Movement Speed]],
+10% [[Experience]] from kills
+Gain 100 [[Power]] When Health above 90%
++10% [[Experience]] from Kills
++30 [[Vitality]]
++10% [[Experience]] from Kills
+Gain [[Health]] Every Second
++10% [[Experience]] from Kills
++60 [[Healing Power|Healing]]
++50 [[Vitality]]
++10% [[Experience]] from Kills
+60% Chance to Gain [[Health]] on [[Kill effect|Kill]]
++50 [[Healing Power|Healing]]
++10% [[Experience]] from Kills
+40% Chance to [[Life steal|Steal Life]] on [[critical hit|Critical Hit]]
++50 [[Precision]]
++10% [[Experience]] from Kills
+18% [[Magic Find]]
+10% [[Coin|Gold]] from Monsters
++10% [[Experience]] from Kills
++50 [[Healing Power|Healing]]
++40 [[Vitality]]
++10% [[Experience]] from Kills
+36% Chance to [[Life stealing|Steal Life]] on [[critical hit|Critical Hit]]
++40 [[Precision]]
++10% [[Experience]] from Kills
+18% [[Magic Find]]
++40 [[Power]]
++10% [[Experience]] from Kills
+50% Chance to Gain [[Health]] on [[Kill effect|Kill]]
++40 [[Healing Power|Healing]]
++10% [[Experience]] from Kills
+7% [[Magic Find]] while Under the Effect of a [[Boon]]
++10% [[Experience]] from Kills
++50 [[Concentration]]
++24% [[Magic Find]] while under the Effect of a [[Boon]]
++10% [[Experience]] from Kills
++50 [[Healing Power|Healing]]
++40 [[Precision]]
++10% [[Experience]] from Kills
++60 [[Healing Power|Healing]]
++50 [[Precision]]
++10% [[Experience]] from Kills
++100 [[Concentration]]
++40% [[Magic Find]] while under the Effect of a [[Boon]]
++10% [[Experience]] from Kills
++60 [[Concentration]]
++28% [[Magic Find]] while Under the Effect of a [[Boon]]
++10% [[Experience]] from Kills
++80 [[Healing Power|Healing]]
++60 [[Precision]]
++10% [[Experience]] from Kills
++80 [[Concentration]]
++32% [[Magic Find]] while Under the Effect of a [[boon]]
++10% [[Experience]] from Kills
+-10% Incoming Damage While [[Stun]]ned, [[knockdown|Knocked Down]], or [[push|Knocked Back]]
++10% [[Experience]] from Kills
+22% [[Magic Find]]
++50 [[Power]]
++10% [[Experience]] from Kills
+Gain [[Health]] Every Second
++40 [[Vitality]]
++10% [[Experience]] from Kills
+10% [[Magic Find]]
++10% [[Experience]] from Kills
+Gain [[Health]] Every Second
++70 [[Vitality]]
++10% [[Experience]] from Kills
+50% Chance to [[Life steal|Steal Life]] on [[critical hit|Critical Hit]]
++60 [[Precision]]
++10% [[Experience]] from Kills
+30% [[Magic Find]]
+40% [[Coin|Gold]] from Monsters
++10% [[Experience]] from Kills
++100 [[Vitality]]
++70 [[Toughness]]
++10% [[Experience]] from Kills
+100% Chance to Gain [[Health]] on [[Kill effect|Kill]]
++70 [[Healing Power|Healing]]
++10% [[Experience]] from Kills
++100 [[Healing Power|Healing]]
++70 [[Vitality]]
++10% [[Experience]] from Kills
+66% Chance to [[Life stealing|Steal Life]] on [[critical hit|Critical Hit]]
++70 [[Precision]]
++10% [[Experience]] from Kills
+30% [[Magic Find]]
++70 [[Power]]
++10% [[Experience]] from Kills
+22% [[Magic Find]]
+20% [[Coin|Gold]] from Monsters
++10% [[Experience]] from Kills
++80 [[Healing Power|Healing]]
++60 [[Vitality]]
++10% [[Experience]] from Kills
+Gain [[Health]] Every Second
++60 [[Vitality]]
++10% [[Experience]] from Kills
+26% [[Magic Find]]
++60 [[Power]]
++10% [[Experience]] from Kills
++60 [[Vitality]]
++50 [[Toughness]]
++10% [[Experience]] from Kills
+Gain [[Health]] Every Second
++50 [[Vitality]]
++10% [[Experience]] from Kills
+26% [[Magic Find]]
+30% [[Coin|Gold]] from Monsters
++10% [[Experience]] from Kills
++80 [[Vitality]]
++60 [[Toughness]]
++10% [[Experience]] from Kills
+80% Chance to Gain [[Health]] on [[Kill effect|Kill]]
++60 [[Healing Power|Healing]]
++10% [[Experience]] from Kills
+-14% Incoming Damage while [[Stun]]ned, [[Knockdown|Knocked Down]], or [[Knockback|Knocked Back]]
+-6% Incoming [[Condition Duration]]
++10% [[Experience]] from Kills
+-20% Incoming Damage while [[Stun]]ned, [[Knockdown|Knocked Down]], or [[Knockback|Knocked Back]]
+-20% Incoming [[Condition Duration]]
++10% [[Experience]] from Kills
+-16% Incoming Damage while [[Stun]]ned, [[Knockdown|Knocked Down]], or [[Knockback|Knocked Back]]
+-10% Incoming [[Condition Duration]]
++10% [[Experience]] from Kills
++100 [[Healing Power|Healing]]
++70 [[Precision]]
++10% [[Experience]] from Kills
+30% Chance to Gain [[Health]] on [[Kill effect|Kill]]
++10% [[Experience]] from Kills
++30 [[Healing Power|Healing]]
++10% [[Experience]] from Kills
+28% Chance to [[Life stealing|Steal Life]] on [[critical hit|Critical Hit]]
++10% [[Experience]] from Kills
+10% [[Magic Find]]
++10% [[Experience]] from Kills
+-18% Incoming Damage while [[Stun]]ned, [[Knockdown|Knocked Down]], or [[Knockback|Knocked Back]]
+-14% Incoming [[Condition Duration]]
++10% [[Experience]] from Kills
++50 [[Vitality]]
++40 [[Toughness]]
++10% [[Experience]] from Kills
++20 [[Healing Power|Healing]]
++10% [[Experience]] from Kills
+Gain [[Health]] Every Second
++10% [[Experience]] from Kills
+Gain [[Health]] Every Second
++10% [[Experience]] from Kills
++80 [[Power]]
++60 [[Ferocity]]
++10% [[Experience]] from Kills
+Gain [[Health]] Every Second
++10% [[Experience]] from Kills
++60 [[Healing Power|Healing]]
++50 [[Vitality]]
++10% [[Experience]] from Kills
+40% Chance to [[Life steal|Steal Life]] on [[critical hit|Critical Hit]]
++50 [[Precision]]
++10% [[Experience]] from Kills
++20 [[Healing Power|Healing]]
++10% [[Experience]] from Kills
+20% Chance to [[Life stealing|Steal Life]] on [[critical hit|Critical Hit]]
++10% [[Experience]] from Kills
+4% [[Magic Find]]
++10% [[Experience]] from Kills
+4% [[Magic Find]]
++10% [[Experience]] from Kills
+60% Chance to Gain [[Health]] on [[Kill effect|Kill]]
++50 [[Healing Power|Healing]]
++10% [[Experience]] from Kills
+20% Chance to Gain [[Health]] on [[Kill effect|Kill]]
++10% [[Experience]] from Kills
++30 [[Healing Power]]
++5% [[Karma]]
+Gain [[Health]] Every Second
++15% [[Experience]] from Kills
++20 [[Healing Power]]
++15% [[Experience]]
++5% [[Karma]]
+50% Chance to Gain [[Health]] on [[Kill effect|Kill]]
++40 [[Healing Power|Healing]]
++10% [[Experience]] from Kills
++20 [[Healing Power]]
++5% [[Karma]]
++100 [[Toughness]]
++70 [[Healing Power]]
++10% [[Experience]]
+66% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++100 [[Healing Power]]
++70 [[Concentration]]
++10% [[Karma]]
++5% All [[Experience]] Gained
++20% [[Magic Find]]
++20% Gold Find
++10% [[World Experience|WXP]] Gained
++10% Outgoing Healing
++100 [[Healing Power]]
++70 [[Concentration]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+-20% Incoming Condition Duration
++100 [[Healing Power]]
++70 [[Concentration]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+Gain [[Health]] Every Second
++10% [[Experience]] from Kills
++50 [[Healing Power]]
++40 [[Toughness]]
++5% [[Karma]]
++100 [[Concentration]]
++70 [[Expertise]]
++10% [[Karma]] Gained
++30 [[Toughness]]
++10% [[Experience]] from Kills
++60 [[Healing Power]]
++50 [[Toughness]]
++5% [[Karma]]
++100 [[Power]]
++70 [[Healing Power]]
++10% [[Experience]]
++80 [[Healing Power]]
++60 [[Toughness]]
++5% [[Karma]]
++100 [[Ferocity]]
+33% Chance to Gain [[Might]] on [[Critical hit|Critical Hit]]
++10% [[Experience]] from Kills
++100 [[Condition Damage]]
++70 [[Healing Power]]
++10% [[Experience]] from Kills
++100 [[Healing Power]]
++70 [[Toughness]]
++5% [[Karma]]
+Gain Health Every Second
++100 [[Healing Power]]
++70 [[Concentration]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+-10% Incoming Damage
++100 [[Healing Power]]
++70 [[Concentration]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+30% Chance to Gain [[Health]] on [[Kill effect|Kill]]
++10% [[Experience]] from Kills
++200 [[Healing Power]] for 10 Seconds on Using a [[Healing skill|Heal Skill]] (Cooldown: 20 seconds)
++10% Outgoing [[Healing]]
++10% [[Experience]] from Kills
++100 [[Healing Power|Healing]]
++70 [[Condition Damage]]
++10% [[Experience]] from Kills
++100 [[Toughness]]
++70 [[Condition Damage]]
++10% [[Experience]] from Kills
++80 [[Healing Power|Healing]]
++60 [[Precision]]
++80 [[Concentration]]
++32% [[Magic Find]] While under Effect of a [[Boon]]
++80 [[Healing Power|Healing]]
++60 [[Vitality]]
+26% [[Magic Find]]
++30% [[Coin|Gold]] from Monsters
+3% [[Magic Find]] While under the Effect of a [[Boon]]
++15% [[Experience]] from Kills
+10% [[Magic Find]]
++15% [[Experience]] from Kills
++50 [[Healing Power|Healing]]
++40 [[Precision]]
++15% [[Experience]] from Kills
++12% [[Chill]] Duration
++60 [[Power]]
+50% Chance to [[Life steal|Steal Life]] on [[critical hit|Critical Hit]]
++60 [[Precision]]
+Gain [[Health]] Every Second
++60 [[Vitality]]
++26% [[Magic Find]]
++60 [[Power]]
++80 [[Healing Power|Healing]]
++60 [[Condition Damage]]
+80% Chance to Gain [[Health]] on [[Kill effect|Kill]]
++60 [[Healing Power|Healing]]
+3% [[Magic Find]] While under the Effect of a [[Boon]]
++10% [[Experience]] from Kills
+3% [[Magic Find]] While under the Effect of a [[Boon]]
++10% [[Experience]] from Kills
+18% [[Magic Find]]
+10% [[Coin|Gold]] from Monsters
++10% [[Experience]] from Kills
++50 [[Healing Power|Healing]]
++40 [[Vitality]]
++10% [[Experience]] from Kills
++50 [[Healing Power]]
++40 [[Condition Damage]]
++10% [[Experience]] from Kills
+36% Chance to [[Life stealing|Steal Life]] on [[critical hit|Critical Hit]]
++40 [[Precision]]
++10% [[Experience]] from Kills
+18% [[Magic Find]]
++40 [[Power]]
++10% [[Experience]] from Kills
+7% [[Magic Find]] while Under the Effect of a [[Boon]]
++10% [[Experience]] from Kills
++5% [[Chill]] Duration
++10% [[Experience]] from Kills
++50 [[Concentration]]
++24% [[Magic Find]] while under the Effect of a [[Boon]]
++10% [[Experience]] from Kills
++7% [[Chill]] Duration
++40 [[Power]]
++10% [[Experience]] from Kills
++50 [[Healing Power|Healing]]
++40 [[Precision]]
++10% [[Experience]] from Kills
++60 [[Healing Power|Healing]]
++50 [[Precision]]
++10% [[Experience]] from Kills
++15% [[Chill]] Duration
++70 [[Power]]
++10% [[Experience]] from Kills
++100 [[Concentration]]
++40% [[Magic Find]] while under the Effect of a [[Boon]]
++10% [[Experience]] from Kills
++60 [[Concentration]]
++28% [[Magic Find]] while Under the Effect of a [[Boon]]
++10% [[Experience]] from Kills
++12% [[Chill]] Duration
++60 [[Power]]
++10% [[Experience]] from Kills
++80 [[Healing Power|Healing]]
++60 [[Precision]]
++10% [[Experience]] from Kills
++80 [[Concentration]]
++32% [[Magic Find]] while Under the Effect of a [[boon]]
++10% [[Experience]] from Kills
+4% [[Magic Find]]
++10% [[Experience]] from Kills
+-20% Incoming Condition Duration
++100 [[Concentration]]
++70 [[Healing Power]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
++45 to [[All Attributes]]
++20% [[Magic Find]]
++10% [[Experience]] from Kills
++20 [[Power]]
++10% [[Experience]] from Kills
+22% [[Magic Find]]
++50 [[Power]]
++10% [[Experience]] from Kills
++80 [[Healing Power|Healing]]
++60 [[Precision]]
++15% [[Experience]] from Kills
+26% [[Magic Find]]
++60 [[Power]]
++15% [[Experience]] from Kills
+22% [[Magic Find]]
++50 [[Power]]
++15% [[Experience]] from Kills
+Gain [[Health]] Every Second
++50 [[Vitality]]
++15% [[Experience]] from Kills
+Gain [[Health]] Every Second
++40 [[Vitality]]
++10% [[Experience]] from Kills
+66% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++70 [[Precision]]
++10% [[Experience]] from Kills
+10% [[Magic Find]]
++10% [[Experience]] from Kills
+4% [[Magic Find]]
++10% [[Experience]] from Kills
+66% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++100 [[Concentration]]
++70 [[Healing Power]]
++10% [[Karma]]
++5% All [[Experience]] Gained
++20% [[Magic Find]]
++20% Gold Find
++10% [[World Experience|WXP]] Gained
+Gain [[Health]] Every Second
++70 [[Vitality]]
++10% [[Experience]] from Kills
++10% Outgoing Healing
++100 [[Concentration]]
++70 [[Healing Power]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
++10% Outgoing Healing
++100 [[Concentration]]
++33% Chance to Gain [[Might]] on Critical Hit
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+50% Chance to [[Life steal|Steal Life]] on [[critical hit|Critical Hit]]
++60 [[Precision]]
++10% [[Experience]] from Kills
+30% [[Magic Find]]
+40% [[Coin|Gold]] from Monsters
++10% [[Experience]] from Kills
+100% Chance to Gain [[Health]] on [[Kill effect|Kill]]
++70 [[Healing Power|Healing]]
++10% [[Experience]] from Kills
++100 [[Healing Power|Healing]]
++70 [[Vitality]]
++10% [[Experience]] from Kills
+66% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++70 [[Precision]]
++15% [[Experience]] from Kills
+66% Chance to [[Life stealing|Steal Life]] on [[critical hit|Critical Hit]]
++70 [[Precision]]
++10% [[Experience]] from Kills
+30% [[Magic Find]]
++70 [[Power]]
++10% [[Experience]] from Kills
++10% [[Chill]] Duration
++50 [[Power]]
++10% [[Experience]] from Kills
+-20% Incoming Condition Duration
++100 [[Concentration]]
++33% Chance to Gain [[Might]] on Critical Hit
++10% Karma
++5% All Experience Gained
++20% Magic Find
++20% Gold Find
++10% WXP Gained
+22% [[Magic Find]]
+20% [[Coin|Gold]] from Monsters
++10% [[Experience]] from Kills
++10% [[Chill]] Duration
++50 [[Power]]
++10% [[Experience]] from Kills
++60 [[Healing Power|Healing]]
++50 [[Condition Damage]]
++10% [[Experience]] from Kills
++30 [[Healing Power|Healing]]
++10% [[Experience]] from Kills
++60 [[Toughness]]
++50 [[Condition Damage]]
++10% [[Experience]] from Kills
++20 [[Toughness]]
++10% [[Experience]] from Kills
++80 [[Healing Power|Healing]]
++60 [[Vitality]]
++10% [[Experience]] from Kills
+Gain [[Health]] Every Second
++60 [[Vitality]]
++10% [[Experience]] from Kills
+26% [[Magic Find]]
++60 [[Power]]
++10% [[Experience]] from Kills
++30% Magic Find
++40% [[Coin|Gold]] from Monsters
++10% [[Experience]] from Kills
++10% [[Karma]]
+18% [[Magic Find]]
+10% [[Coin|Gold]] from Monsters
++15% [[Experience]] from Kills
++30% [[Magic Find]]
++10% [[Karma]]
++15% Experience from Kills
++100 [[Expertise]]
+33% Chance to [[life stealing|Steal Life]] on [[critical hit|Critical Hit]]
++10% [[Experience]] from Kills
+Gain [[Health]] Every Second
++50 [[Vitality]]
++10% [[Experience]] from Kills
++80 [[Healing Power|Healing]]
++60 [[Condition Damage]]
++10% [[Experience]] from Kills
+26% [[Magic Find]]
+30% [[Coin|Gold]] from Monsters
++10% [[Experience]] from Kills
+80% Chance to Gain [[Health]] on [[Kill effect|Kill]]
++60 [[Healing Power|Healing]]
++10% [[Experience]] from Kills
++100 [[Expertise]]
++70 [[Precision]]
++10% [[Experience]] from Kills
+66% Chance to Steal Life on [[critical hit|Critical Hit]]
++70 [[Precision]]
++10% [[Experience]] from Kills
++10% [[Karma]]
+Gain Health Every Second
++100 [[Concentration]]
++33% Chance to Gain [[Might]] on Critical Hit
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+Gain Health Every Second
++100 [[Concentration]]
++70 [[Healing Power]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+66% Chance to [[Life stealing|Steal Life]] on [[critical hit|Critical Hit]]
++70 [[Power]]
++10% [[Experience]] from Kills
+66% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++70 [[Condition Damage]]
++10% [[Experience]] from Kills
++100 [[Expertise]]
++70 [[Vitality]]
++15% [[Experience]] from Kills
+-10% Incoming Damage
++100 [[Concentration]]
++70 [[Healing Power]]
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
+-10% Incoming Damage
++100 [[Concentration]]
++33% Chance to Gain [[Might]] on Critical Hit
++10% [[Karma]]
++5% All Experience Gained
++20% [[Magic Find]]
++20% Gold Find
++10% WXP Gained
++100 [[Healing Power|Healing]]
++70 [[Precision]]
++10% [[Experience]] from Kills
+30% [[Magic Find]]
++70 [[Condition Damage]]
++15% [[Experience]] from Kills
+10% [[Magic Find]]
++10% [[Experience]] from Kills
+66% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]]
++100 [[Concentration]]
++33% Chance to Gain [[Might]] on [[Critical hit|Critical Hit]]
++10% [[Karma]]
++5% All [[Experience]] Gained
++20% [[Magic Find]]
++20% Gold Find
++10% [[World Experience|WXP]] Gained
++30 [[Healing Power|Healing]]
++10% [[Experience]] from Kills
+10% [[Magic Find]] While under the Effect of a [[Boon]]
++15% [[Experience]] from Kills
+28% Chance to [[Life stealing|Steal Life]] on [[critical hit|Critical Hit]]
++10% [[Experience]] from Kills
+10% [[Magic Find]]
++10% [[Experience]] from Kills
++20 [[Healing Power |Healing]]
++10% [[Experience]] from Kills
+Gain Health Every Second
++70 Vitality
++10% [[Experience]] from Kills
++10% [[Karma]]
++3% [[Chill]] Duration
++10% [[Experience]] from Kills
+66% Chance to [[Life stealing|Steal Life]] on [[Critical hit|Critical Hit]] 
++70 [[Precision]] 
++30% [[Magic Find]] 
++10% [[Experience]] from Kills
++100 [[Ferocity]]
+28% Chance to Gain [[Might]] on Critical Hit
++10% [[Experience]] from Kills
++30% [[Magic Find]]

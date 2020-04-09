@@ -9,13 +9,10 @@ namespace Gw2_WikiParser.Exceptions
         public string Line { get; set; }
 
         public UnmatchedFoodEffectException(string line)
+            : base("Unmatched Effect for " + line)
         {
             Line = line;
         }
 
-        public override string ToString()
-        {
-            return "Unmatched Effect for " + Line + base.ToString();
-        }
     }
 }

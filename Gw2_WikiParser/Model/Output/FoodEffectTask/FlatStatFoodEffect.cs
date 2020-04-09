@@ -1,4 +1,5 @@
-﻿using Gw2_WikiParser.Extensions;
+﻿using Gw2_WikiParser.Exceptions;
+using Gw2_WikiParser.Extensions;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using System;
@@ -11,7 +12,7 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
 
     public class FlatStatFoodEffect : FoodEffect
     {
-        private static Regex _regexValue = new Regex("((\\+|\\-) *[0-9]+)\\w", RegexOptions.Compiled);
+        private static Regex _regexValue = new Regex("((\\+|\\-)* *([0-9]+ +))", RegexOptions.Compiled);
         private static Regex _regexAffectedStat = new Regex($"\\b(\\w*({Enum.GetNames(typeof(StatType)).Join("|")})\\w*)\\b", RegexOptions.IgnoreCase);
 
         public new static Dictionary<string, string> InvalidWords = new Dictionary<string, string>(FoodEffect.InvalidWords)
@@ -19,6 +20,11 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
             {"Condition Damage", StatType.ConditionDamage.ToString() },
             {"Healing Power", StatType.HealingPower.ToString() },
             {"All Attributes", StatType.AllAttributes.ToString() }
+        };
+
+        public new static Dictionary<Regex, string> RegexReplacementMatches = new Dictionary<Regex, string>(FoodEffect.RegexReplacementMatches)
+        {
+
         };
 
         public enum StatType
@@ -39,7 +45,10 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
         {
             Type = EffectType.Flat;
 
-            ParseEffect(line);
+            if(!ParseEffect(line))
+            {
+                throw new UnmatchedFoodEffectException(line);
+            }
         }
 
         [JsonConverter(typeof(StringEnumConverter))]
@@ -55,12 +64,13 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
             StatType statType;
             bool wasSuccessful = false;
 
-            InvalidWords.ForEach((key, value) => line = line.RegexReplace(key, value, RegexOptions.IgnoreCase));
+            line = FoodEffect.NormalizeLine(line, FlatStatFoodEffect.InvalidWords, FlatStatFoodEffect.RegexReplacementMatches);
 
             if (_regexValue.Match(line).Success &&
                _regexAffectedStat.Match(line).Success)
             {
-                if (int.TryParse(_regexValue.Match(line).Value, out value) &&
+                string matchValue = _regexValue.Match(line).Value.Trim();
+                if (int.TryParse(matchValue, out value) &&
                    Enum.TryParse(_regexAffectedStat.Match(line).Value, true, out statType))
                 {
                     Value = value;
@@ -74,7 +84,7 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
 
         public static bool MatchLine(string line)
         {
-            InvalidWords.ForEach((key, value) => line = line.RegexReplace(key, value, RegexOptions.IgnoreCase));
+            line = FoodEffect.NormalizeLine(line, FlatStatFoodEffect.InvalidWords, FlatStatFoodEffect.RegexReplacementMatches);
             return _regexValue.IsMatch(line) &&
                    _regexAffectedStat.IsMatch(line);
         }
