@@ -22,6 +22,7 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
             {"Healing Effectiveness (Outgoing)", StatType.OutgoingHealing.ToString() },
             {"Outgoing Healing", StatType.OutgoingHealing.ToString() },
             {"Outgoing HealingPower", StatType.OutgoingHealing.ToString() },
+            {"Experience Kill", StatType.KillExperience.ToString() },
             {"Experience from Kills", StatType.KillExperience.ToString() },
             {"All Experience Gained", StatType.Experience.ToString() },
             {"Poison Duration", StatType.PoisonDuration.ToString() },
@@ -79,7 +80,7 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
 
             if (!ParseEffect(line))
             {
-                throw new UnmatchedFoodEffectException(line);
+                throw new UnmatchedFoodEffectException(line, nameof(VariableStatFoodEffect));
             }
         }
 

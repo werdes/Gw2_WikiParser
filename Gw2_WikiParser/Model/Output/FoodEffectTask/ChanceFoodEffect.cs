@@ -49,7 +49,7 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
 
             if (!ParseEffect(line))
             {
-                throw new UnmatchedFoodEffectException(line);
+                throw new UnmatchedFoodEffectException(line, nameof(ChanceFoodEffect));
             }
         }
 

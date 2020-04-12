@@ -41,14 +41,15 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
             {"Using a Healing Skill", Trigger.HealSkill.ToString() },
             {"Dodge", Trigger.Dodge.ToString() },
             {"Kill effect", Trigger.Kill.ToString() },
-            {"Kill", Trigger.Kill.ToString() },
+            {"on Kill", Trigger.Kill.ToString() },
+            {"from Kills", Trigger.Kill.ToString() },
             {"When You Kill a Foe", Trigger.Kill.ToString() },
             {"on Dismount", Trigger.Dismount.ToString() }
         };
 
         protected static Dictionary<Regex, string> RegexReplacementMatches = new Dictionary<Regex, string>()
         {
-
+            {new Regex(@"<span(.*)<\/span>"), " " }
         };
 
         public enum EffectType
@@ -118,8 +119,7 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
         private void ParseSpecialEffect(string line)
         {
             SpecialCondition specialCondition = SpecialCondition.None;
-
-            InvalidWords.ForEach((key, value) => line = line.RegexReplace(key, value, RegexOptions.IgnoreCase));
+            line = NormalizeLine(line, InvalidWords, RegexReplacementMatches);
 
             if (_regexAffectedStat.IsMatch(line))
             {
@@ -127,6 +127,7 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
                 {
                     Condition = specialCondition;
                 }
+                else throw new UnmatchedFoodEffectException(line, "SpecialEffect");
             }
         }
 
@@ -137,15 +138,14 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
         private void ParseTrigger(string line)
         {
             Trigger trigger = Trigger.None;
-
-            InvalidWords.ForEach((key, value) => line = line.RegexReplace(key, value, RegexOptions.IgnoreCase));
-
+            line = NormalizeLine(line, InvalidWords, RegexReplacementMatches);
             if (_regexTriggers.IsMatch(line))
             {
                 if (Enum.TryParse(_regexTriggers.Match(line).Value, out trigger))
                 {
                     On = trigger;
                 }
+                else throw new UnmatchedFoodEffectException(line, "Trigger");
             }
         }
 
@@ -176,7 +176,7 @@ namespace Gw2_WikiParser.Model.Output.FoodEffectTask
             {
                 return new StaticFoodEffect(line);
             }
-            else throw new UnmatchedFoodEffectException(line);
+            else throw new UnmatchedFoodEffectException(line, "Effect Match");
         }
 
         protected static string NormalizeLine(string line, Dictionary<string, string> invalidWords, Dictionary<Regex, string> regexReplacementMatches)

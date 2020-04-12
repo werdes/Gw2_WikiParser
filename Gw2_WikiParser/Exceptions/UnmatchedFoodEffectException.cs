@@ -8,8 +8,8 @@ namespace Gw2_WikiParser.Exceptions
     {
         public string Line { get; set; }
 
-        public UnmatchedFoodEffectException(string line)
-            : base("Unmatched Effect for " + line)
+        public UnmatchedFoodEffectException(string line, string message = "")
+            : base("Unmatched Effect for " + line + ", " + message)
         {
             Line = line;
         }
