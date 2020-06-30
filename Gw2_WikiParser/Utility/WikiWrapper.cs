@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using VDS.RDF;
 using VDS.RDF.Parsing;
+using WikiClientLibrary;
 using WikiClientLibrary.Client;
 using WikiClientLibrary.Generators;
 using WikiClientLibrary.Pages;
@@ -26,6 +27,7 @@ namespace Gw2_WikiParser.Utility
         private RatelimitHandler _ratelimitHandler = new RatelimitHandler(100, nameof(WikiWrapper));
         private RdfXmlParser _rdfParser = new RdfXmlParser(RdfXmlParserMode.DOM);
         private CacheHandler<(string, string, RdfGraphContainer, WikiPage)> _cache = new Utility.CacheHandler<(string, string, RdfGraphContainer, WikiPage)>(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.Name);
+        private CacheHandler<string> _cacheUrls = new CacheHandler<string>(MethodBase.GetCurrentMethod().DeclaringType.Name + "_url");
 
         private WikiClient _client;
         private WikiSite _site;
@@ -37,7 +39,7 @@ namespace Gw2_WikiParser.Utility
 
         private WikiWrapper()
         {
-            string wikiUrl = ConfigurationManager.AppSettings["wiki_url"];
+            string wikiUrl = ConfigurationManager.AppSettings["wiki_api_url"];
             string userAgent = $"Werdes.WikiParser.{Assembly.GetExecutingAssembly().GetName().Version.ToString()}";
             _client = new WikiClient()
             {
@@ -68,14 +70,40 @@ namespace Gw2_WikiParser.Utility
             }
 
             WikiPage page = new WikiPage(_site, title);
-            
+
             await page.RefreshAsync(PageQueryOptions.FetchContent | PageQueryOptions.ResolveRedirects);
 
             _ratelimitHandler.Set();
-            _cache.Set(page.Title, (page.Title, page.Content, null, null));
+            _cache.Set(title, (page.Title, page.Content, null, page));
 
             return (page.Title, page.Content);
         }
+
+
+        /// <summary>
+        /// Gets the said page
+        /// </summary>
+        /// <param name="title"></param>
+        /// <returns></returns>
+        public string GetPageUrl(string title)
+        {
+            _log.Info($"Retrieving page url for {title}");
+
+            if (_cacheUrls.Contains(title))
+            {
+                return _cacheUrls.Get(title);
+            }
+            else
+            {
+
+                _ratelimitHandler.Wait();
+                WikiLink link = WikiLink.Parse(_site, title);
+                _cacheUrls.Set(title, link.TargetUrl);
+                _ratelimitHandler.Set();
+                return link.TargetUrl;
+            }
+        }
+
 
         /// <summary>
         /// Returns a list of pages with content contained in a category
@@ -128,7 +156,7 @@ namespace Gw2_WikiParser.Utility
                 if (_cache.Contains(page.Title) && caching)
                 {
                     (string title, string content, RdfGraphContainer rdfGraph, WikiPage wikiPage) = _cache.Get(page.Title);
-                    if (!string.IsNullOrEmpty(title) && 
+                    if (!string.IsNullOrEmpty(title) &&
                         !string.IsNullOrEmpty(content) &&
                         rdfGraph != null)
                     {
@@ -189,7 +217,7 @@ namespace Gw2_WikiParser.Utility
                 _log.Info($"Retrieving Category {catPage.Title}: {mainCategoryInfo.MembersCount} pages, {mainCategoryInfo.SubcategoriesCount} categories");
                 CategoryMembersGenerator categoryMembersGenerator = new CategoryMembersGenerator(catPage);
                 List<WikiPage> pages = await categoryMembersGenerator.EnumPagesAsync().ToList();
-                
+
                 foreach (WikiPage page in pages)
                 {
                     CategoryInfoPropertyGroup categoryInfo = page.GetPropertyGroup<CategoryInfoPropertyGroup>();

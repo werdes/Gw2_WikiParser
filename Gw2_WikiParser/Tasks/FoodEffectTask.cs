@@ -62,7 +62,8 @@ namespace Gw2_WikiParser.Tasks
                 }
 
 
-                WriteOuput(foods);
+                WriteOutput(foods);
+                WriteFeastIdsOutput(foods);
                 wasSuccessful = true;
             }
             catch (Exception ex)
@@ -255,18 +256,38 @@ namespace Gw2_WikiParser.Tasks
                         _log.Warn($"Ingredient/Recipe could not be resolved for {pageTitle}");
                     }
                 }
-
-
             }
             return null;
         }
 
+        private bool WriteFeastIdsOutput(List<Food> foods)
+        {
+            bool wasSuccessful = true;
+            string[] paths = ConfigurationManager.AppSettings["food_effects_feast_ids_output_files"].Split(';');
+
+            foreach (string path in paths)
+            {
+                try
+                {
+                    int[] ids = foods.Where(x => x.IsFeast).Select(x => x.Id).ToArray();
+                    File.WriteAllText(path, JsonConvert.SerializeObject(ids, Formatting.Indented), Encoding.UTF8);
+                }
+                catch (IOException ex)
+                {
+                    _log.Error(ex);
+                    wasSuccessful = false;
+                }
+            }
+
+            return wasSuccessful;
+        }
+
         /// <summary>
-        /// Writes the output files (separated by ;, from AppConfig key bulk_output_files)
+        /// Writes the output files (separated by ;, from AppConfig key food_effects_files)
         /// </summary>
         /// <param name="foods"></param>
         /// <returns></returns>
-        private bool WriteOuput(List<Food> foods)
+        private bool WriteOutput(List<Food> foods)
         {
             bool wasSuccessful = true;
             string[] paths = ConfigurationManager.AppSettings["food_effects_output_files"].Split(';');

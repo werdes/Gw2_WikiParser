@@ -52,7 +52,7 @@ namespace Gw2_WikiParser.Tasks
                 if (items != null &&
                     items.Count > 0)
                 {
-                    wasSuccessful = WriteOuput(items);
+                    wasSuccessful = WriteOutput(items);
                 }
             }
             catch (Exception ex)
@@ -112,7 +112,7 @@ namespace Gw2_WikiParser.Tasks
         /// </summary>
         /// <param name="items"></param>
         /// <returns></returns>
-        private bool WriteOuput(List<BulkItem> items)
+        private bool WriteOutput(List<BulkItem> items)
         {
             bool wasSuccessful = true;
             string[] paths = ConfigurationManager.AppSettings["bulk_output_files"].Split(';');

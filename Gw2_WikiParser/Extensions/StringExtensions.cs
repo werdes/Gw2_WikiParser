@@ -28,6 +28,17 @@ namespace Gw2_WikiParser.Extensions
             return false;
         }
 
+        public static string TrimAndReduceWhitespace(this string cValue, char cWhitespace = ' ', int nMaxOccurences = 1)
+        {
+            string cRetVal = cValue.Trim(new char[] { cWhitespace });
+
+            for (int i = cRetVal.Length; i > nMaxOccurences; i--)
+            {
+                cRetVal = cRetVal.Replace(new string(cWhitespace, i), cWhitespace.ToString());
+            }
+            return cRetVal;
+        }
+
         public static string Format(this string s, params object[] parameters)
         {
             return string.Format(s, parameters);

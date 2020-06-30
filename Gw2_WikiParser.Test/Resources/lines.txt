@@ -1980,8 +1980,7 @@ Gain 40 [[Precision]] When Health above 90%
 +10% [[Experience]] from Kills
 Gain 40 [[Condition Damage]] When Health above 90%
 +10% [[Experience]] from Kills
-10% [[Movement speed]].
-+10% [[Experience]] from kills
+10% [[Movement speed]], +10% [[Experience]] from kills
 Gain 120 [[Precision]] When Health above 90%
 +10% [[Experience]] from Kills
 Gain 120 [[Condition Damage]] When Health above 90%
@@ -2002,16 +2001,14 @@ Gain 200 [[Condition Damage]] When Health Is above 90%
 +10% [[Experience]] from Kills
 Gain 200 [[Power]] When Health above 90%
 +10% [[Experience]] from Kills
-15% [[Movement speed]].
-+10% [[Experience]] from kills
+15% [[Movement speed]], +10% [[Experience]] from kills
 Gain 60 [[Power]] When Health above 90%
 +10% [[Experience]] from Kills
 Gain 100 [[Precision]] When Health above 90%
 +10% [[Experience]] from Kills
 Gain 100 [[Condition Damage]] When Health above 90%
 +10% [[Experience]] from Kills
-25% [[Movement speed|Movement Speed]],
-10% [[Experience]] from kills
+25% [[Movement speed|Movement Speed]], 10% [[Experience]] from kills
 Gain 100 [[Power]] When Health above 90%
 +10% [[Experience]] from Kills
 +30 [[Vitality]]

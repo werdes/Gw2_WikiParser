@@ -22,6 +22,7 @@ namespace Gw2_WikiParser
             {
                 tasks.Add(new BulkIngredientTask(new string[] { "Category:Bulk_foods" }));
                 tasks.Add(new FoodEffectTask(ConfigurationManager.AppSettings["food_effects_categories"].Split(';')));
+                tasks.Add(new EventTimerTask(ConfigurationManager.AppSettings["event_timer_page"]));
 
                 _log.Info("Running tasks:");
                 tasks.ForEach(x => _log.Info($"- {x.GetType().Name}: {x.GetProperties()}"));
